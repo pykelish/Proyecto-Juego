@@ -1,0 +1,1 @@
+DisparoRatio = 0; 
