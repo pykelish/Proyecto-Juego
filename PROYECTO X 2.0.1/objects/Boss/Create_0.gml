@@ -1,0 +1,1 @@
+numPuntos = 500;

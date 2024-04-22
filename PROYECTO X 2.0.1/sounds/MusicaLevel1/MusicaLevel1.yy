@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":194.28136,
+  "duration":145.44,
   "name":"MusicaLevel1",
   "parent":{
     "name":"Sounds",
@@ -19,7 +19,7 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"MusicaLevel1.wav",
+  "soundFile":"MusicaLevel1.mp3",
   "type":0,
-  "volume":0.33,
+  "volume":0.12,
 }

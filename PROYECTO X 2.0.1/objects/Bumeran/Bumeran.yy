@@ -6,6 +6,7 @@
     {"$GMEvent":"","%Name":"","collisionObjectId":{"name":"Pared","path":"objects/Pared/Pared.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"","%Name":"","collisionObjectId":{"name":"ParedHorizontal","path":"objects/ParedHorizontal/ParedHorizontal.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"","%Name":"","collisionObjectId":{"name":"ParePara","path":"objects/ParePara/ParePara.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"","%Name":"","collisionObjectId":{"name":"ObjetoEnemigo","path":"objects/ObjetoEnemigo/ObjetoEnemigo.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
   "name":"Bumeran",
