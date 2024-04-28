@@ -41,10 +41,10 @@
   "properties":[],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
-  "solid":false,
+  "solid":true,
   "spriteId":{
-    "name":"Player_Idle",
-    "path":"sprites/Player_Idle/Player_Idle.yy",
+    "name":"Pink_Monster_Idle",
+    "path":"sprites/Pink_Monster_Idle/Pink_Monster_Idle.yy",
   },
   "spriteMaskId":null,
   "visible":true,

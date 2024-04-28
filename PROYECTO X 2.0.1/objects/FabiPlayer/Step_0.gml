@@ -11,16 +11,16 @@ if (Movi != 0){
 }
 
 	image_xscale = Movi; /// para escalar la imagen y se voltee para a su respectivo aldo de movimiento
-	sprite_index = Player_Run; 
+	sprite_index = Pink_Monster_Run; 
 	
 	if (keyboard_check(ord("A"))) {
-	sprite_index = Player_Ataque; 
+	sprite_index = Pink_Monster_Throw; 
 	
 	
 	} 
 	
 } else {
-	sprite_index = Player_Idle; 
+	sprite_index = Pink_Monster_Idle; 
 	
 }
 
@@ -35,7 +35,7 @@ if (keyboard_check_pressed(vk_space) && collision_rectangle(x - 8, y, x + 8, y +
 	vspeed = -13;
 	audio_play_sound(SonidoSalto, 1, false); 
 	if (keyboard_check(ord("A"))) {
-	sprite_index = Player_Ataque; 
+	sprite_index = Pink_Monster_Throw; 
 	}
 }
 
@@ -43,7 +43,7 @@ if (keyboard_check_pressed(vk_space) && collision_rectangle(x - 8, y, x + 8, y +
 	vspeed = -13;
 	audio_play_sound(SonidoSalto, 1, false); 
 	if (keyboard_check(ord("A"))) {
-	sprite_index = Player_Ataque; 
+	sprite_index = Pink_Monster_Throw; 
 	} 
 	
 } 

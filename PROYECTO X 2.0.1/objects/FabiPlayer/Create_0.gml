@@ -5,5 +5,5 @@ Punto = 0;
 state = "vivo";
 hp = 2;
 contador = 0; 
-SpriteMuerte = Player_Muerte; 
+SpriteMuerte = Pink_Monster_Death; 
 Esperar = 0;

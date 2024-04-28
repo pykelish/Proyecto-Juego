@@ -19,8 +19,8 @@ if (!collision_rectangle(x - 8, y, x + 8, y + 1, ParedHorizontal, false, false))
 
 
 
-if (!place_meeting(x, y + 1, Pared) && !place_meeting(x, y + 1, ParedHorizontal)) {
-	sprite_index = Player_Salto;
+if (!place_meeting(x, y + 1, Pared) && !place_meeting(x, y + 1, ParedHorizontal) && !place_meeting(x, y + 1, ParePara)) {
+	sprite_index = Pink_Monster_Jump;
 
 }
 
@@ -53,24 +53,24 @@ if (pisoH) {
 	y = pisoH.y;
 	vspeed = 0;
 	gravity = 0; 
-	sprite_index = Player_Idle; 
+	sprite_index = Pink_Monster_Idle; 
 	
 	
 	if (keyboard_check(ord("A")) && pisoH) {
-	sprite_index = Player_Ataque; 
+	sprite_index = Pink_Monster_Throw; 
 	
 	} else {
-		sprite_index = Player_Idle;  
+		sprite_index = Pink_Monster_Idle;  
 	}
 	
 	var Movi = keyboard_check(vk_right) - keyboard_check(vk_left);
 	if (Movi != 0){
 	
 	image_xscale = Movi; /// para escalar la imagen y se voltee para a su respectivo aldo de movimiento
-	sprite_index = Player_Run; 
+	sprite_index = Pink_Monster_Run; 
 		
 } else {
-	sprite_index = Player_Idle; 
+	sprite_index = Pink_Monster_Idle; 
 	
 }
 		
@@ -83,33 +83,33 @@ if (pisoChico) {
 	y = pisoChico.y;
 	vspeed = 0;
 	gravity = 0; 
-	sprite_index = Player_Idle; 
+	sprite_index = Pink_Monster_Idle; 
 	
 	
 	if (keyboard_check(ord("A")) && pisoChico) {
-	sprite_index = Player_Ataque; 
+	sprite_index = Pink_Monster_Throw; 
 	
 	} else {
-		sprite_index = Player_Idle;  
+		sprite_index = Pink_Monster_Idle;  
 	}
 	
 	var Movi = keyboard_check(vk_right) - keyboard_check(vk_left);
 	if (Movi != 0){
 	
 	image_xscale = Movi; /// para escalar la imagen y se voltee para a su respectivo aldo de movimiento
-	sprite_index = Player_Run; 
+	sprite_index = Pink_Monster_Run; 
 	
 	
 	
 	} else {
-		sprite_index = Player_Idle; 
+		sprite_index = Pink_Monster_Idle; 
 	
 	}
 					
 } else if(vspeed < 0) {
-	var techo = collision_rectangle(x - 8, y - 90, x + 8, y - 90 + vspeed, ParePara, false, false);		
+	var techo = collision_rectangle(x - 8, y - 64, x + 8, y - 64 + vspeed, ParePara, false, false);		
 	if (techo) {
-		y = techo.y + techo.sprite_height + 90;
+		y = techo.y + techo.sprite_height + 64;
 		vspeed = 0;
 			
 	}
@@ -121,7 +121,7 @@ if (pisoChico) {
 
 
 if (keyboard_check(ord("A"))) {
-	sprite_index = Player_Ataque; 
+	sprite_index = Pink_Monster_Throw; 
 	if(Esperar == 4) {
 		Esperar = 0; 
 		
