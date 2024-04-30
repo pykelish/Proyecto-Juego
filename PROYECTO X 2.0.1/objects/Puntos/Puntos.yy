@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Flor_Rosa",
-    "path":"sprites/Flor_Rosa/Flor_Rosa.yy",
+    "name":"Coin",
+    "path":"sprites/Coin/Coin.yy",
   },
   "spriteMaskId":null,
   "visible":true,

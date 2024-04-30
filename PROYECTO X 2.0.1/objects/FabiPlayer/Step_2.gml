@@ -65,9 +65,14 @@ if (pisoH) {
 	
 	var Movi = keyboard_check(vk_right) - keyboard_check(vk_left);
 	if (Movi != 0){
+		
+	if(keyboard_check(vk_shift)){
+		image_xscale = Movi; /// para escalar la imagen y se voltee para a su respectivo aldo de movimiento
+		sprite_index = Pink_Monster_Run;
+	}
 	
 	image_xscale = Movi; /// para escalar la imagen y se voltee para a su respectivo aldo de movimiento
-	sprite_index = Pink_Monster_Run; 
+	sprite_index = Pink_Monster_Walk; 
 		
 } else {
 	sprite_index = Pink_Monster_Idle; 
@@ -96,9 +101,14 @@ if (pisoChico) {
 	var Movi = keyboard_check(vk_right) - keyboard_check(vk_left);
 	if (Movi != 0){
 	
-	image_xscale = Movi; /// para escalar la imagen y se voltee para a su respectivo aldo de movimiento
-	sprite_index = Pink_Monster_Run; 
 	
+	image_xscale = Movi; /// para escalar la imagen y se voltee para a su respectivo aldo de movimiento
+	sprite_index = Pink_Monster_Walk; 
+	
+	if(keyboard_check(vk_shift)){
+		image_xscale = Movi; /// para escalar la imagen y se voltee para a su respectivo aldo de movimiento
+		sprite_index = Pink_Monster_Run;
+	}
 	
 	
 	} else {
