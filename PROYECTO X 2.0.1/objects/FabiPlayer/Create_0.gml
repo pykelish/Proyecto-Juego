@@ -12,3 +12,6 @@ up = false;
 
 dobleSalto = false;
 contadorSaltos = 0;
+
+dashProgress = 0; 
+//dashDuration = alarm[0] = room_speed / 3;

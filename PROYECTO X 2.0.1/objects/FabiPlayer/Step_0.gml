@@ -10,8 +10,8 @@ if (Movi != 0){
 		x += Movi * 3;
 	}
 	
-	if(place_free(x + Movi * 5, y) && keyboard_check(vk_shift)){
-		x += Movi * 5;
+	if(place_free(x + Movi * 4, y) && keyboard_check(vk_shift)){
+		x += Movi * 3;
 	}
 
 	image_xscale = Movi; /// para escalar la imagen y se voltee para a su respectivo aldo de movimiento
@@ -21,6 +21,41 @@ if (Movi != 0){
 		image_xscale = Movi; /// para escalar la imagen y se voltee para a su respectivo aldo de movimiento
 		sprite_index = Pink_Monster_Run;
 	}
+	
+	if (keyboard_check_pressed(vk_space) && dashProgress <= 0){
+    if (Movi < 0){
+        x -= 80;
+        sprite_index = Pink_Monster_Roll;
+    } else if (Movi > 0){
+        x += 80;
+        sprite_index = Pink_Monster_Roll;
+    }
+    
+    image_xscale = Movi;
+    
+    // Inicia el dash
+    dashProgress = 1;
+    alarm[0] = room_speed / 3; // Establece la alarma para detener el dash después de 1 segundo (room_speed / 3)
+	}
+	
+	
+	
+	if (dashProgress > 0 && !alarm[0]){
+    var dashSpeed = 80 / room_speed / 3; // Velocidad de movimiento del dash (80 unidades en 1 segundo)
+    if (Movi < 0){
+        x -= dashSpeed;
+    } else if (Movi > 0){
+        x += dashSpeed;
+    }
+    
+    dashProgress -= 1;
+	}
+	
+	if (alarm[0] == 0){
+	    dashProgress = 0;
+	}
+
+
 	
 	if (keyboard_check(ord("A"))) {
 	sprite_index = Pink_Monster_Throw; 
