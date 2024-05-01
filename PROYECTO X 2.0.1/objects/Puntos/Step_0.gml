@@ -5,6 +5,7 @@ if (place_meeting(x, y, FabiPlayer) && !Recolectar) {
 
 }
 
+
 if (Recolectar) {
 	if (floor(image_index) >= image_number - 1){
 		instance_destroy(); 
@@ -12,3 +13,4 @@ if (Recolectar) {
 	}
 
 }
+

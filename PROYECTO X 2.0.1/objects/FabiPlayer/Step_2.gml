@@ -2,29 +2,17 @@ if(state = "muerto"){
 	exit;
 }
 
-if (!collision_rectangle(x - 8, y, x + 8, y + 1, Pared, false, false)){
+if (!collision_rectangle(x - 8, y, x + 8, y + 1, Pared, false, false) or !collision_rectangle(x - 8, y, x + 8, y + 1, ParedHorizontal, false, false) or !collision_rectangle(x - 8, y, x + 8, y + 1, ParePara, false, false)){
 	gravity = .3; 
 	
 
 } 
 
 
-if (!collision_rectangle(x - 8, y, x + 8, y + 1, ParedHorizontal, false, false)) { 
-	gravity = .3;
-	
-	
-}
-
-
-
-
-
 if (!place_meeting(x, y + 1, Pared) && !place_meeting(x, y + 1, ParedHorizontal) && !place_meeting(x, y + 1, ParePara)) {
 	sprite_index = Pink_Monster_JumpFall;
 
 }
-
-
 
 	
 if (vspeed > 0){

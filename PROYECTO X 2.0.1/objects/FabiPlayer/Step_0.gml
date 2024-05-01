@@ -6,8 +6,8 @@ var Movi = keyboard_check(vk_right) - keyboard_check(vk_left);
 
 if (Movi != 0){
 	
-	if(place_free(x + Movi * 5, y)) { ///para verificar si a donde queremos caminar es un lugar libre (colisiones)
-		x += Movi * 2;
+	if(place_free(x + Movi * 10, y)) { ///para verificar si a donde queremos caminar es un lugar libre (colisiones)
+		x += Movi * 3;
 	}
 	
 	if(place_free(x + Movi * 5, y) && keyboard_check(vk_shift)){
@@ -34,12 +34,24 @@ if (Movi != 0){
 }
 
 
-if (keyboard_check_pressed(vk_up) && collision_rectangle(x - 8, y, x + 8, y + 1, Pared, false, false)){
-	vspeed = -15;
-	sprite_index = Pink_Monster_JumpUp;
-	audio_play_sound(SonidoSalto, 1, false);
-	
+if (keyboard_check_pressed(vk_up) && !dobleSalto){
+    contadorSaltos += 1;
+    vspeed = -5;
+    sprite_index = Pink_Monster_JumpUp;
+    audio_play_sound(SonidoSalto, 1, false);
+        
+    if (contadorSaltos > 0){
+        dobleSalto = true;
+		sprite_index = Pink_Double_Jump;
+    }
+        
 }
+
+if (collision_rectangle(x - 8, y, x + 8, y + 1, Pared, false, false) or collision_rectangle(x - 8, y, x + 8, y + 1, ParePara, false, false)){
+    dobleSalto = false;
+    contadorSaltos = 0;
+}
+
 
 
 if (keyboard_check_pressed(vk_up) && collision_rectangle(x - 8, y, x + 8, y + 1, ParedHorizontal, false, false)){
@@ -52,6 +64,7 @@ if (keyboard_check_pressed(vk_up) && collision_rectangle(x - 8, y, x + 8, y + 1,
 
 if (keyboard_check_pressed(vk_up) && collision_rectangle(x - 8, y, x + 8, y + 1, ParePara, false, false)){
 	vspeed = -5;
+	sprite_index = Pink_Monster_JumpUp;
 	audio_play_sound(SonidoSalto, 1, false); 
 	if (keyboard_check(ord("A"))) {
 	sprite_index = Pink_Monster_Throw; 
