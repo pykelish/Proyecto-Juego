@@ -3,6 +3,12 @@ event_inherited();
 DisparoRatio = 0; 
 Punto = 0; 
 state = "vivo";
+
+width = 6;
+height = 25;
+
+
+estado="idle";
 hp = 2;
 contador = 0; 
 SpriteMuerte = Pink_Monster_Death; 
@@ -14,4 +20,4 @@ dobleSalto = false;
 contadorSaltos = 0;
 
 dashProgress = 0; 
-//dashDuration = alarm[0] = room_speed / 3;
+
