@@ -555,10 +555,10 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
+    {"roomId":{"name":"RoomMenu","path":"rooms/RoomMenu/RoomMenu.yy",},},
     {"roomId":{"name":"Room_Test_EMA","path":"rooms/Room_Test_EMA/Room_Test_EMA.yy",},},
     {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"roomId":{"name":"Room_Test","path":"rooms/Room_Test/Room_Test.yy",},},
-    {"roomId":{"name":"RoomMenu","path":"rooms/RoomMenu/RoomMenu.yy",},},
     {"roomId":{"name":"Room9_Boss","path":"rooms/Room9_Boss/Room9_Boss.yy",},},
     {"roomId":{"name":"Room7","path":"rooms/Room7/Room7.yy",},},
     {"roomId":{"name":"RoomWin2","path":"rooms/RoomWin2/RoomWin2.yy",},},

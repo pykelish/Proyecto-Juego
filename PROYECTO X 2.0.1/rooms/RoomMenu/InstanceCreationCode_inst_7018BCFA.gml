@@ -1,1 +1,1 @@
-texto = "SALIR"
+texto = "ONLINE"
