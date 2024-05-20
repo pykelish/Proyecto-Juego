@@ -9,4 +9,7 @@ if(global.SERVER <0){
 	exit;
 	
 }
+
+//Damos a esta sesión que es el servidor
+global.IS_SERVER=true;
 room_goto(Room_Test_EMA);

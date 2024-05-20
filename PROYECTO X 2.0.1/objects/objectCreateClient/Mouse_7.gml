@@ -12,4 +12,7 @@ if(connection <0){
 	show_message("No se concretó la conexión");
 	exit;
 }
+
+//Decimos que esta sesión no es servidor uwu
+global.IS_SERVER=false;
 room_goto(Room_Test_EMA);

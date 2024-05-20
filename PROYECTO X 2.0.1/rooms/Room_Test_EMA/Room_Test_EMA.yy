@@ -64,6 +64,8 @@
     {"name":"inst_293E664C","path":"rooms/Room_Test_EMA/Room_Test_EMA.yy",},
     {"name":"inst_6E41D03F","path":"rooms/Room_Test_EMA/Room_Test_EMA.yy",},
     {"name":"inst_5504BFB0","path":"rooms/Room_Test_EMA/Room_Test_EMA.yy",},
+    {"name":"inst_31637742","path":"rooms/Room_Test_EMA/Room_Test_EMA.yy",},
+    {"name":"inst_5094CB9E","path":"rooms/Room_Test_EMA/Room_Test_EMA.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -102,6 +104,8 @@
         {"$GMRInstance":"","%Name":"inst_75F560","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_75F560","objectId":{"name":"Puntos","path":"objects/Puntos/Puntos.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":2245.0,"y":95.0,},
         {"$GMRInstance":"","%Name":"inst_4E8CE3D4","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_4E8CE3D4","objectId":{"name":"Puntos","path":"objects/Puntos/Puntos.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":2201.0,"y":95.0,},
         {"$GMRInstance":"","%Name":"inst_6563CD60","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_6563CD60","objectId":{"name":"FabiPlayer","path":"objects/FabiPlayer/FabiPlayer.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":49.0,"y":736.0,},
+        {"$GMRInstance":"","%Name":"inst_31637742","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_31637742","objectId":{"name":"objServer","path":"objects/objServer/objServer.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":31.0,"y":32.0,},
+        {"$GMRInstance":"","%Name":"inst_5094CB9E","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_5094CB9E","objectId":{"name":"objRegisterUser","path":"objects/objRegisterUser/objRegisterUser.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":93.0,"y":32.0,},
       ],"layers":[],"name":"Instances_1","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRAssetLayer":"","%Name":"MapAssets","assets":[
         {"$GMRSpriteGraphic":"","%Name":"graphic_1D7CF121","animationSpeed":1.0,"colour":4294967295,"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"name":"graphic_1D7CF121","resourceType":"GMRSpriteGraphic","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"spriteId":{"name":"Grassland_entities__16_x_16_","path":"sprites/Grassland_entities__16_x_16_/Grassland_entities__16_x_16_.yy",},"x":436.0,"y":517.0,},
