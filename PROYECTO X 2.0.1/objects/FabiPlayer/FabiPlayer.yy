@@ -17,8 +17,8 @@
   "name":"FabiPlayer",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objetos Room 1",
-    "path":"folders/Objetos Room 1.yy",
+    "name":"Characters",
+    "path":"folders/Objetos/Multijugador/Characters.yy",
   },
   "parentObjectId":null,
   "persistent":false,

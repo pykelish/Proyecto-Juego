@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"srcBroadcastUsers",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"srcBroadcastUsers",
+  "parent":{
+    "name":"Networking",
+    "path":"folders/Scripts/Networking.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

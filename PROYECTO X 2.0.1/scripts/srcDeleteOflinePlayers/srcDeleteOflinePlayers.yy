@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"srcDeleteOflinePlayers",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"srcDeleteOflinePlayers",
+  "parent":{
+    "name":"Characters",
+    "path":"folders/Scripts/Characters.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
