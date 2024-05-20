@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":105.96,
+  "duration":0.0,
   "name":"BossSong",
   "parent":{
     "name":"Sounds",
