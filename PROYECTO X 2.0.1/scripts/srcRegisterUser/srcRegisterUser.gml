@@ -4,6 +4,7 @@ function srcRegisterUser(playerName){
 	//Creamos el buffer de memoria necesaria
 	var buffer =buffer_create(0, buffer_grow, 1);
 	
+	buffer_write(buffer,buffer_string,"register_user");
 	//Le decimos que el buffer almacenará String (Ya que solo será el nombre)
 	buffer_write(buffer, buffer_string, playerName);
 	
