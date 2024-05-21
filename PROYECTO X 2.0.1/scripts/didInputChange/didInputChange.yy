@@ -1,12 +1,12 @@
 {
   "$GMScript":"",
-  "%Name":"srcRegisterUser",
+  "%Name":"didInputChange",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"srcRegisterUser",
+  "name":"didInputChange",
   "parent":{
-    "name":"Client",
-    "path":"folders/Scripts/Networking/Client.yy",
+    "name":"Characters",
+    "path":"folders/Scripts/Characters.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

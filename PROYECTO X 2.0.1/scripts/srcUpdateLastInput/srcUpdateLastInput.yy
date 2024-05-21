@@ -1,12 +1,12 @@
 {
   "$GMScript":"",
-  "%Name":"srcRegisterUser",
+  "%Name":"srcUpdateLastInput",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"srcRegisterUser",
+  "name":"srcUpdateLastInput",
   "parent":{
-    "name":"Client",
-    "path":"folders/Scripts/Networking/Client.yy",
+    "name":"Characters",
+    "path":"folders/Scripts/Characters.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

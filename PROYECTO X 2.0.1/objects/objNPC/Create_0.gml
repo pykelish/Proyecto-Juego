@@ -1,10 +1,7 @@
-input ={
-	hor:0
-};
-lastInput= {
+input={
 
 	hor:0
-
+	
 };
 event_inherited();
 
@@ -28,4 +25,3 @@ dobleSalto = false;
 contadorSaltos = 0;
 
 dashProgress = 0; 
-

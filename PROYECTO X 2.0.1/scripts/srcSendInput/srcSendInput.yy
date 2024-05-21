@@ -1,9 +1,9 @@
 {
   "$GMScript":"",
-  "%Name":"srcRegisterUser",
+  "%Name":"srcSendInput",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"srcRegisterUser",
+  "name":"srcSendInput",
   "parent":{
     "name":"Client",
     "path":"folders/Scripts/Networking/Client.yy",

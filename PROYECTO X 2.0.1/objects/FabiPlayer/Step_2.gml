@@ -134,7 +134,12 @@ if (hp <= 0) {
 	
 
 } 
+if(didInputChange()){
 	
+	srcSendInput();
+	srcUpdateLastInput();
+		
+}
 
 
 

@@ -1,7 +1,10 @@
 // Los recursos de Script han cambiado para la v2.3.0 Consulta
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 para más información
 function SaltoJugador(){
-	if (keyboard_check_pressed(vk_up) && !dobleSalto){
+	
+	var salto=keyboard_check_pressed(vk_up);
+	input.salto=salto;
+	if ( input.salto && !dobleSalto){
 	    contadorSaltos += 1;
 	    vspeed = -5;
 	    sprite_index = Pink_Monster_JumpUp;

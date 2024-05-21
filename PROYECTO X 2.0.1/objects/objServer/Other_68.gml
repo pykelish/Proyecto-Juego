@@ -32,6 +32,31 @@ if(type == network_type_data){
 
 		srcAcceptUser(playerId,serverId);
 		srcBroadcastUsers();
+	}else if(bufferType== "client_input"){
+		
+		var movi= buffer_read(buffer, buffer_f16);
+		var salto= buffer_read(buffer,buffer_f16);
+		
+		var dash= buffer_read(buffer, buffer_f16);
+		var disparo= buffer_read(buffer, buffer_f16);
+		
+		for(var i=0; i<array_length(global.PLAYERS); i++){
+		
+		var player = global.PLAYERS[i];
+		if(player.id == playerId){
+			
+			var instance= player.instance;
+			
+			instance.input.movi=movi;
+			instance.input.salto=salto;
+			instance.input.dash=dash;
+			instance.input.disparo=disparo;
+			break;
+		
+		}
+		
+	}
+		
 	}
 	//Limpiamos la memoria dinámica una vez el objeto fue creado, debido a que el buffer sigue sirviendo para...
 	//... continuar enviando y recibiendo jugadores

@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"srcBroadcastUsers",
   "parent":{
-    "name":"Networking",
-    "path":"folders/Scripts/Networking.yy",
+    "name":"Server",
+    "path":"folders/Scripts/Networking/Server.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",
