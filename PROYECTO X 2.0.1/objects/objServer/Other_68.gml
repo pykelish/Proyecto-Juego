@@ -4,16 +4,20 @@ var type = ds_map_find_value(async_load,"type");
 
 if(type == network_type_data){
 	
-	//Si el tipo es de un tipo red, es decir si es una conexión
-	//Obtendrá del buffer enviado anteriormente el nombre e id del jugador dentro del buffer
+	//Si el tipo es de un tipo red, es decir si es una conexión...
+	//...obtendrá del buffer enviado anteriormente el nombre e id del jugador dentro del buffer
 	var buffer= ds_map_find_value(async_load,"buffer");
+	
+	//Generamos una variable "bufferType" que obtiene el tipo de buffer que se pasará (register_user, client_input)
 	var bufferType= buffer_read(buffer, buffer_string);
 	
 	
 	var playerId= ds_map_find_value(async_load, "id");
 	
-	if(bufferType== "register_user"){
+	//Comparamos el tipo de buffer con el tipo "register_user"
+	if(bufferType == "register_user"){
 		
+		//Si lo es, se obtendrán los datos necesarios para crear instancias de jugadores 
 		var playerName = buffer_read(buffer, buffer_string);
 	
 		var npc= instance_create_layer(128,700,"Instances", objNPC);
@@ -32,26 +36,27 @@ if(type == network_type_data){
 
 		srcAcceptUser(playerId,serverId);
 		srcBroadcastUsers();
-	}else if(bufferType== "client_input"){
+	}
+	//Si el cliente nos envía un buffer tipo "client_input" (script: srcSendInput())
+	else if(bufferType== "client_input"){
 		
+		//Creamos una variable DIFERENTE para cada movimiento (Salto, disparo, dash...)
+		//Y le asignamos el dato que nos arroje buffer_read 
 		var movi= buffer_read(buffer, buffer_f16);
-		var salto= buffer_read(buffer,buffer_f16);
 		
-		var dash= buffer_read(buffer, buffer_f16);
-		var disparo= buffer_read(buffer, buffer_f16);
-		
+		//Recorremos el arreglo de jugadores para saber cual es el que nos envió el buffer
 		for(var i=0; i<array_length(global.PLAYERS); i++){
 		
-		var player = global.PLAYERS[i];
-		if(player.id == playerId){
+			//Creamos una variable jugador para almacenar al cliente que se vaya leyendo
+			var player = global.PLAYERS[i];
+			if(player.id == playerId){
 			
-			var instance= player.instance;
+				//Creamos una instancia de ese jugador en el servidor
+				var instance= player.instance;
 			
-			instance.input.movi=movi;
-			instance.input.salto=salto;
-			instance.input.dash=dash;
-			instance.input.disparo=disparo;
-			break;
+				//A esa instancia le damos el movimiento que realizará el NPC en el servidor, jugador como cliente
+				instance.input.movi=movi;
+				break;
 		
 		}
 		

@@ -2,8 +2,7 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 para más información
 function DashJugador(){
 	
-	var dash=keyboard_check_pressed(vk_space);
-	input.dash=dash;
+	input.dash=keyboard_check_pressed(vk_space);
 	if(input.dash){
 		estado = "dash";
 		alarm[0] = room_speed / 3;

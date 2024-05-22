@@ -1,5 +1,6 @@
 function srcUpdateLastInput(){
 
-	lastInput.hor=input.hor;
+	
+	lastInput.movi=input.movi;
 
 }

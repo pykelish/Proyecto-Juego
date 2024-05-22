@@ -1,12 +1,28 @@
-input ={
-	hor:0
+//Lista que contiene las acciones del jugador
+//Puede editarse para añadir salto, disparo, dash etc...
+input = {
+	
+	//Propiedad encargada del movimiento izq-derecha del jugador
+	movi:0,
+	
 };
-lastInput= {
 
-	hor:0
+//Creamos una variable lasInput identica a input, para saber que inputs están siendo repetidos...
+//... si cambió el input (es decir, si hizo otro movimiento o se quedó quieto)...
+//... en el ultimo frame lo actualizará, si no, continuará con el mismo input ...
+// ... esto para evitar sobrecargas e inputs duplicados
 
+lastInput = {
+	
+	movi:0,
+	
 };
-event_inherited();
+
+
+
+
+
+/*event_inherited();
 
 DisparoRatio = 0; 
 Punto = 0; 
@@ -28,4 +44,4 @@ dobleSalto = false;
 contadorSaltos = 0;
 
 dashProgress = 0; 
-
+*/

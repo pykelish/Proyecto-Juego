@@ -3,10 +3,10 @@
 function DisparoJugador(){
 	
 	DisparoRatio -=1; 
-	var disparo= keyboard_check(ord("A"));
-	input.disparo=disparo;
+	input.disparo= keyboard_check(ord("A"));
 	
-	if (disparo && DisparoRatio <= 0) {
+	
+	if (input.disparo && DisparoRatio <= 0) {
 		var Buum = instance_create_layer(x + 47 * image_xscale, y - 29, "Instances", Bumeran); 
 		audio_play_sound(SonBumerang, 1, false); 
 		Buum.image_xscale = image_xscale; 

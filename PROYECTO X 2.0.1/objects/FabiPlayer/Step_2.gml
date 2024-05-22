@@ -1,3 +1,15 @@
+
+//Si el input (acción) cambió
+if(didInputChange()){
+	
+	//Enviamos el input actual
+	srcSendInput();
+	
+	//Actualizamos la variable lastInput para que pueda permitir cambiar el input original
+	srcUpdateLastInput();
+		
+}
+/*
 if(state = "muerto"){
 	exit;
 }
@@ -133,13 +145,9 @@ if (hp <= 0) {
 	state = "muerto";
 	
 
-} 
-if(didInputChange()){
-	
-	srcSendInput();
-	srcUpdateLastInput();
-		
-}
+} */
+
+
 
 
 

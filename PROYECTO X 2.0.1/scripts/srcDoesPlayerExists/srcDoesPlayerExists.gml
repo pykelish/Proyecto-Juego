@@ -7,11 +7,11 @@ function srcDoesPlayerExists(serverId){
 		var npc= instance_find(objNPC,i);
 		if(npc.serverId == serverId){
 		
-			return true;
+			return npc;
 		
 		}
 		
 	}
-	return false;
+	return noone;
 
 }

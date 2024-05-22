@@ -1,3 +1,4 @@
+/*
 if (other.state == "muerto") {
 	exit;
 	
@@ -13,6 +14,7 @@ if (other.state == "muerto") {
  
 
 }
+*/
 
 
 

@@ -10,7 +10,7 @@ if(type == network_type_data){
 		global.SERVER_ID= buffer_read(buffer, buffer_s8);
 	
 	}
-	if(bufferType == "update_users"){
+	else if(bufferType == "update_users"){
 		
 		var playersAmount = buffer_read(buffer, buffer_s8);
 		
@@ -25,8 +25,8 @@ if(type == network_type_data){
 				continue;
 				
 			}
-			
-			if(!srcDoesPlayerExists(serverId)){
+			var npc = srcDoesPlayerExists(serverId);
+			if(npc == noone){
 				
 				var npc= instance_create_layer(128,384, "Instances",objNPC);
 				npc.name = playerName;
@@ -34,16 +34,49 @@ if(type == network_type_data){
 				
 			}
 			
-			array_push(global.PLAYERS, {
+			global.PLAYERS[serverId] = {
+				
 				"serverId": serverId,
 				"name" : playerName,
-			
-			});
+				"instance": npc
+				
+			}
 		
 		}
 		srcDeleteOflinePlayers();
 		
 		
+	}
+	else if ( bufferType == "update_world" ){
+	
+		var playersCount= buffer_read(buffer, buffer_s8);
+		
+		for (var i = 0; i<playersCount; i++){
+		
+			var serverId = buffer_read (buffer, buffer_s8);
+			
+			var playerx = buffer_read (buffer, buffer_f16);
+			var playery = buffer_read (buffer, buffer_f16);
+			
+			var inputHor = buffer_read (buffer, buffer_f16);
+			
+			if(serverId == global.SERVER_ID){
+				
+				continue;
+				
+			}
+			
+			var player = global.PLAYERS[serverId];
+			var instance = player.instance;
+			
+			instance.x = playerx;
+			instance.y = playery;
+			instance.input.movi = inputHor;
+			
+			
+		
+		}
+	
 	}
 	
 	

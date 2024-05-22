@@ -120,6 +120,7 @@
     {"id":{"name":"scrMovimiento","path":"scripts/scrMovimiento/scrMovimiento.yy",},},
     {"id":{"name":"srcAcceptUser","path":"scripts/srcAcceptUser/srcAcceptUser.yy",},},
     {"id":{"name":"srcBroadcastUsers","path":"scripts/srcBroadcastUsers/srcBroadcastUsers.yy",},},
+    {"id":{"name":"srcBroadcastWorld","path":"scripts/srcBroadcastWorld/srcBroadcastWorld.yy",},},
     {"id":{"name":"srcDeleteOflinePlayers","path":"scripts/srcDeleteOflinePlayers/srcDeleteOflinePlayers.yy",},},
     {"id":{"name":"srcDoesPlayerExists","path":"scripts/srcDoesPlayerExists/srcDoesPlayerExists.yy",},},
     {"id":{"name":"srcRegisterUser","path":"scripts/srcRegisterUser/srcRegisterUser.yy",},},

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"srcBroadcastWorld",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"srcBroadcastWorld",
+  "parent":{
+    "name":"Server",
+    "path":"folders/Scripts/Networking/Server.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

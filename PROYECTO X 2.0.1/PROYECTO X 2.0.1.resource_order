@@ -70,6 +70,7 @@
     {"name":"SaltoJugador","order":1,"path":"scripts/SaltoJugador/SaltoJugador.yy",},
     {"name":"scrMovimiento","order":4,"path":"scripts/scrMovimiento/scrMovimiento.yy",},
     {"name":"srcBroadcastUsers","order":1,"path":"scripts/srcBroadcastUsers/srcBroadcastUsers.yy",},
+    {"name":"srcBroadcastWorld","order":2,"path":"scripts/srcBroadcastWorld/srcBroadcastWorld.yy",},
     {"name":"srcDeleteOflinePlayers","order":1,"path":"scripts/srcDeleteOflinePlayers/srcDeleteOflinePlayers.yy",},
     {"name":"srcSendInput","order":1,"path":"scripts/srcSendInput/srcSendInput.yy",},
     {"name":"srcUpdateLastInput","order":3,"path":"scripts/srcUpdateLastInput/srcUpdateLastInput.yy",},

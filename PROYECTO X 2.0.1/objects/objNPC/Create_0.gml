@@ -1,6 +1,20 @@
-input={
-
-	hor:0
+input = {
+	
+	movi:0,
+	
+};
+lastInput = {
+	
+	movi:0,
+	
+};
+/*
+lastInput = {
+	
+	movi:0,
+	dash:0,
+	salto:0,
+	disparo:0
 	
 };
 event_inherited();
@@ -25,3 +39,4 @@ dobleSalto = false;
 contadorSaltos = 0;
 
 dashProgress = 0; 
+*/

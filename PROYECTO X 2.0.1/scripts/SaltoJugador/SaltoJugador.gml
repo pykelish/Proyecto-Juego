@@ -2,8 +2,7 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 para más información
 function SaltoJugador(){
 	
-	var salto=keyboard_check_pressed(vk_up);
-	input.salto=salto;
+	input.salto=keyboard_check_pressed(vk_up);
 	if ( input.salto && !dobleSalto){
 	    contadorSaltos += 1;
 	    vspeed = -5;

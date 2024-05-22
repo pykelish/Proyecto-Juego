@@ -1,7 +1,7 @@
 function MovimientoJugador(){
 	
-	var Movi = keyboard_check(vk_right) - keyboard_check(vk_left);
-	input.movi=Movi;
+	input.movi = keyboard_check(vk_right) - keyboard_check(vk_left);
+
 	if (input.movi != 0){
 	
 		if(place_free(x + input.movi * 10, y)) { ///para verificar si a donde queremos caminar es un lugar libre (colisiones)

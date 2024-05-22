@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-switch(state){
+/*switch(state){
 	case "muerto":
 		image_speed = 0;
 		audio_play_sound(SonidoMuerteEnem, 1, false);
@@ -14,3 +14,4 @@ switch(state){
 if(state="muerto"){
 	room_goto(RoomMuerte);
 }
+*/
