@@ -1,11 +1,13 @@
 input = {
 	
 	movi:0,
+	correr:0
 	
 };
 lastInput = {
 	
 	movi:0,
+	correr:0
 	
 };
 /*

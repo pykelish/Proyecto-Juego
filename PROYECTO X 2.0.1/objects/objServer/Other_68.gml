@@ -20,7 +20,7 @@ if(type == network_type_data){
 		//Si lo es, se obtendrán los datos necesarios para crear instancias de jugadores 
 		var playerName = buffer_read(buffer, buffer_string);
 	
-		var npc= instance_create_layer(128,700,"Instances", objNPC);
+		var npc= instance_create_layer(128,700,"Instances_1", objNPC);
 	
 		var serverId= global.PLAYER_SERVER_ID++;
 		
@@ -43,6 +43,7 @@ if(type == network_type_data){
 		//Creamos una variable DIFERENTE para cada movimiento (Salto, disparo, dash...)
 		//Y le asignamos el dato que nos arroje buffer_read 
 		var movi= buffer_read(buffer, buffer_f16);
+		var correr= buffer_read(buffer, buffer_f16);
 		
 		//Recorremos el arreglo de jugadores para saber cual es el que nos envió el buffer
 		for(var i=0; i<array_length(global.PLAYERS); i++){
@@ -55,7 +56,8 @@ if(type == network_type_data){
 				var instance= player.instance;
 			
 				//A esa instancia le damos el movimiento que realizará el NPC en el servidor, jugador como cliente
-				instance.input.movi=movi;
+				instance.input.movi = movi;
+				instance.input.correr = correr;
 				break;
 		
 		}

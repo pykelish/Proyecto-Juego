@@ -1,9 +1,9 @@
 //Lista que contiene las acciones del jugador
 //Puede editarse para añadir salto, disparo, dash etc...
 input = {
-	
 	//Propiedad encargada del movimiento izq-derecha del jugador
 	movi:0,
+	correr:0
 	
 };
 
@@ -13,8 +13,8 @@ input = {
 // ... esto para evitar sobrecargas e inputs duplicados
 
 lastInput = {
-	
 	movi:0,
+	correr:0
 	
 };
 

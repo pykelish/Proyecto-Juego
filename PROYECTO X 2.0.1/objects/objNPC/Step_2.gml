@@ -1,14 +1,6 @@
 
 //Si el input (acción) cambió
-if(didInputChange()){
-	
-	//Enviamos el input actual
-	srcSendInput();
-	
-	//Actualizamos la variable lastInput para que pueda permitir cambiar el input original
-	srcUpdateLastInput();
-		
-}
+
 
 /*if(state = "muerto"){
 	exit;
@@ -46,30 +38,4 @@ if (vspeed > 0){
 	
 	
 }
-
-
-
-
-
-/*if (keyboard_check(ord("A"))) {
-	sprite_index = Pink_Monster_Throw; 
-	if(Esperar == 4) {
-		Esperar = 0; 
-		
-	}
-	
-} 
-
-if (hp <= 0) {
-	
-	sprite_index = SpriteMuerte;
-	state = "muerto";
-	
-
-} */
-
-
-
-
-
 

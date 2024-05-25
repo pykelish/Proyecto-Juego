@@ -11,4 +11,4 @@ if(global.IS_SERVER){
 var playerName = get_string("Ingrese su nombre de usuario", "");
 srcRegisterUser(playerName);
 
-instance_create_layer(128,384, "Instances",FabiPlayer);
+instance_create_layer(128,384, "Instances_1",FabiPlayer);
