@@ -37,14 +37,12 @@ if (enElSuelo) {
 }
 
 // Lógica de salto
-if (input.salto && (enElSuelo || contadorSaltos < 2)) {
+if (input.salto && contadorSaltos < 3) {
     vspeed = -5;
     contadorSaltos += 1;
-    
-    if (contadorSaltos == 1) {
-        sprite_index = Pink_Monster_JumpUp;
-        // audio_play_sound(SonidoSalto, 1, false);
-    } else if (contadorSaltos == 2) {
+    sprite_index = Pink_Monster_JumpUp;
+    // audio_play_sound(SonidoSalto, 1, false);
+    if (contadorSaltos == 2) {
         dobleSalto = true;
         sprite_index = Pink_Double_Jump;
         // audio_play_sound(SonidoDobleSalto, 1, false);
