@@ -44,6 +44,7 @@ if(type == network_type_data){
 		//Y le asignamos el dato que nos arroje buffer_read 
 		var movi= buffer_read(buffer, buffer_f16);
 		var correr= buffer_read(buffer, buffer_f16);
+		var salto= buffer_read(buffer, buffer_f16);
 		
 		//Recorremos el arreglo de jugadores para saber cual es el que nos envió el buffer
 		for(var i=0; i<array_length(global.PLAYERS); i++){
@@ -58,6 +59,7 @@ if(type == network_type_data){
 				//A esa instancia le damos el movimiento que realizará el NPC en el servidor, jugador como cliente
 				instance.input.movi = movi;
 				instance.input.correr = correr;
+				instance.input.salto = salto;
 				break;
 		
 		}

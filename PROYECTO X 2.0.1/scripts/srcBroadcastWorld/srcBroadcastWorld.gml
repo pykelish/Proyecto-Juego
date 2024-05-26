@@ -16,6 +16,7 @@ function srcBroadcastWorld(){
 		buffer_write(buffer, buffer_f16, instance.y);
 		buffer_write(buffer, buffer_f16, instance.input.movi);
 		buffer_write(buffer, buffer_f16, instance.input.correr);
+		buffer_write(buffer, buffer_f16, instance.input.salto);
 	
 	}
 	var bufferSize = buffer_get_size(buffer);

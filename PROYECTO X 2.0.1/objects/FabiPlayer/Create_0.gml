@@ -3,7 +3,8 @@
 input = {
 	//Propiedad encargada del movimiento izq-derecha del jugador
 	movi:0,
-	correr:0
+	correr:0,
+	salto:0
 	
 };
 
@@ -14,18 +15,20 @@ input = {
 
 lastInput = {
 	movi:0,
-	correr:0
+	correr:0,
+	salto:0
 	
 };
 
 
 
-
-
-/*event_inherited();
-
-DisparoRatio = 0; 
 Punto = 0; 
+
+
+/*
+event_inherited();
+DisparoRatio = 0; 
+
 state = "vivo";
 
 width = 6;
@@ -40,8 +43,7 @@ Esperar = 0;
 fall = false;
 up = false; 
 
-dobleSalto = false;
-contadorSaltos = 0;
+
 
 dashProgress = 0; 
 */

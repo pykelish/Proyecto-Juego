@@ -9,6 +9,7 @@ function srcSendInput(){
 	//Y le escribimos el movimiento como tal
 	buffer_write(buffer, buffer_f16, input.movi);
 	buffer_write(buffer, buffer_f16, input.correr);
+	buffer_write(buffer, buffer_f16, input.salto);
 	
 	//Enviamos el buffer al servidor
 	network_send_packet(global.CLIENT,buffer,buffer_get_size(buffer));

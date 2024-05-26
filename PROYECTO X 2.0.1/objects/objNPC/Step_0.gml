@@ -13,16 +13,8 @@ if(input.movi != 0) {
 			image_xscale = sign(input.movi);
 			sprite_index = Pink_Monster_Run;
 		}
-	
-	
-	/*x+=sign(input.movi)*3;
-
-	
-	if(input.correr){
-		x += sign(input.movi) * 5;
-        image_xscale = sign(input.movi);
-        
-	}*/
+		
+		
 	
 }
 else{
@@ -30,6 +22,35 @@ else{
 	sprite_index = Pink_Monster_Idle;	
 	
 }
+if (!variable_instance_exists(id, "dobleSalto")) {
+    dobleSalto = false;
+    contadorSaltos = 0;
+}
+
+// Comprobar si el jugador está en el suelo
+var enElSuelo = collision_rectangle(x - 8, y + 1, x + 8, y + 2, Pared, false, false);
+
+// Restablecer el contador de saltos y el estado de doble salto cuando el jugador toca el suelo
+if (enElSuelo) {
+    contadorSaltos = 0;
+    dobleSalto = false;
+}
+
+// Lógica de salto
+if (input.salto && (enElSuelo || contadorSaltos < 2)) {
+    vspeed = -5;
+    contadorSaltos += 1;
+    
+    if (contadorSaltos == 1) {
+        sprite_index = Pink_Monster_JumpUp;
+        // audio_play_sound(SonidoSalto, 1, false);
+    } else if (contadorSaltos == 2) {
+        dobleSalto = true;
+        sprite_index = Pink_Double_Jump;
+        // audio_play_sound(SonidoDobleSalto, 1, false);
+    }
+}
+
 /*
 if(state = "muerto"){
 	exit;

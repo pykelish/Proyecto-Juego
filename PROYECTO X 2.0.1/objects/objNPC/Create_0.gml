@@ -1,15 +1,20 @@
 input = {
 	
 	movi:0,
-	correr:0
+	correr:0,
+	salto:0
 	
 };
 lastInput = {
 	
 	movi:0,
-	correr:0
+	correr:0,
+	salto:0
 	
 };
+
+
+Punto = 0; 
 /*
 lastInput = {
 	
@@ -22,7 +27,7 @@ lastInput = {
 event_inherited();
 
 DisparoRatio = 0; 
-Punto = 0; 
+
 state = "vivo";
 
 width = 6;

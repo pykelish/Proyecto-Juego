@@ -17,8 +17,8 @@ function SaltoJugador(){
 	}
 	
 	if (collision_rectangle(x - 8, y, x + 8, y + 1, Pared, false, false) or collision_rectangle(x - 8, y, x + 8, y + 1, ParePara, false, false)){
-    dobleSalto = false;
-    contadorSaltos = 0;
+		dobleSalto = false;
+		contadorSaltos = 0;
 	}
 
 
