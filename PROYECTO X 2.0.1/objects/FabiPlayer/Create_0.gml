@@ -4,7 +4,9 @@ input = {
 	//Propiedad encargada del movimiento izq-derecha del jugador
 	movi:0,
 	correr:0,
-	salto:0
+	salto:0,
+	dobleSalto:false,
+	contadorSalto:0
 	
 };
 
@@ -16,7 +18,9 @@ input = {
 lastInput = {
 	movi:0,
 	correr:0,
-	salto:0
+	salto:0,
+	dobleSalto:false,
+	contadorSalto:0
 	
 };
 

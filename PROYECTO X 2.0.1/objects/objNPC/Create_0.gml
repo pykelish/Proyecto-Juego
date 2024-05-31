@@ -2,14 +2,18 @@ input = {
 	
 	movi:0,
 	correr:0,
-	salto:0
+	salto:0,
+	dobleSalto:false,
+	contadorSalto:0
 	
 };
 lastInput = {
 	
 	movi:0,
 	correr:0,
-	salto:0
+	salto:0,
+	dobleSalto:false,
+	contadorSalto:0
 	
 };
 

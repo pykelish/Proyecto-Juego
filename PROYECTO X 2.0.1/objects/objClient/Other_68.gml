@@ -61,6 +61,8 @@ if(type == network_type_data){
 			var inputHor = buffer_read (buffer, buffer_f16);
 			var inputCorrer = buffer_read (buffer, buffer_f16);
 			var inputSalto = buffer_read (buffer, buffer_f16);
+			var inputDobleSalto = buffer_read (buffer, buffer_f16);
+			var inputContadorSalto = buffer_read (buffer, buffer_f16);
 			
 			if(serverId == global.SERVER_ID){
 				
@@ -76,6 +78,8 @@ if(type == network_type_data){
 			instance.input.movi = inputHor;
 			instance.input.correr = inputCorrer;
 			instance.input.salto = inputSalto;
+			instance.input.dobleSalto = inputDobleSalto;
+			instance.input.contadorSalto = inputContadorSalto;
 			
 			
 		
