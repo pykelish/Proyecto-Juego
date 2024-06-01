@@ -1,7 +1,7 @@
 //Se guarda en la lista de movimientos del usuario (devuelve 0 o 1 dependiendo del estado del jugador)
 input.movi = keyboard_check(vk_right) - keyboard_check(vk_left);
 input.correr = keyboard_check(vk_shift);
-input.salto = keyboard_check(vk_up);
+input.salto = keyboard_check_pressed(vk_up);
 //Si está en movimiento, se cambia de posición IMPORTANTE USAR INPUT CON LA PROPIEDAD...
 //... DEL MOVIMIENTO
 if(input.movi != 0) {
@@ -27,22 +27,15 @@ else{
 	
 }
 
-if ( input.salto && !input.dobleSalto){
-	input.contadorSalto += 1;
-	vspeed = -5;
+if (input.salto && saltoDoble != 1){
+	saltoDoble += 1;
+	vspeed -= 5;
 	sprite_index = Pink_Monster_JumpUp;
-	audio_play_sound(SonidoSalto, 1, false);
-        
-	if (input.contadorSalto > 0){
-	    input.dobleSalto = true;
-		sprite_index = Pink_Double_Jump;
-	}
-        
 }
 	
-if (collision_rectangle(x - 8, y, x + 8, y + 1, Pared, false, false)){
-	input.dobleSalto = false;
-	input.contadorSalto = 0;
+if(collision_rectangle(x - 8, y, x + 8, y + 1, Pared, false, false) && saltoDoble > 0){
+	saltoDoble = 0;
+
 }
 
 

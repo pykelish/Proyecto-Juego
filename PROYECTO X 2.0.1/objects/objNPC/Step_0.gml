@@ -22,23 +22,19 @@ else{
 	sprite_index = Pink_Monster_Idle;	
 	
 }
-if ( input.salto && !input.dobleSalto){
-	input.contadorSalto += 1;
-	vspeed = -5;
+
+if (input.salto && saltoDoble != 1){
+	saltoDoble += 1;
+	vspeed -= 5;
 	sprite_index = Pink_Monster_JumpUp;
-	audio_play_sound(SonidoSalto, 1, false);
-        
-	if (input.contadorSalto > 0){
-	    input.dobleSalto = true;
-		sprite_index = Pink_Double_Jump;
-	}
-        
 }
 	
-if (collision_rectangle(x - 8, y, x + 8, y + 1, Pared, false, false)){
-	input.dobleSalto = false;
-	input.contadorSalto = 0;
+if(collision_rectangle(x - 8, y, x + 8, y + 1, Pared, false, false) && saltoDoble > 0){
+	saltoDoble = 0;
+
 }
+
+
 
 /*
 if(state = "muerto"){

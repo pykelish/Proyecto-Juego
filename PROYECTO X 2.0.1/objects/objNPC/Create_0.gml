@@ -17,6 +17,8 @@ lastInput = {
 	
 };
 
+// En el evento Create del objeto controlador
+saltoDoble = 0;
 
 Punto = 0; 
 /*
