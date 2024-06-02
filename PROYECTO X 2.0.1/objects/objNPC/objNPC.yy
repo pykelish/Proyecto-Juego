@@ -35,8 +35,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Pink_Monster_Idle",
-    "path":"sprites/Pink_Monster_Idle/Pink_Monster_Idle.yy",
+    "name":"Dude_Monster_Idle",
+    "path":"sprites/Dude_Monster_Idle/Dude_Monster_Idle.yy",
   },
   "spriteMaskId":null,
   "visible":true,

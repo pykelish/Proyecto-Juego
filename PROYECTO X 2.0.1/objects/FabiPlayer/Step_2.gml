@@ -14,17 +14,23 @@ if(didInputChange()){
 	exit;
 }*/
 
-if (!collision_rectangle(x - 8, y, x + 8, y + 1, Pared, false, false)){
+if (!collision_rectangle(x - 8, y, x + 8, y + 1, Pared, false, false) && enEscalera==false ){
 	gravity = .3; 
 	
 
 } 
 
 
-if (!place_meeting(x, y + 1, Pared)) {
+if (!place_meeting(x, y + 1, Pared) && enEscalera = false) {
 	sprite_index = Pink_Monster_JumpFall;
 
 }
+
+if(place_meeting(x, y + 1, ParePara) && enEscalera = true){
+	sprite_index = Pink_Monster_Climb;
+
+}
+
 
 
 if (vspeed > 0){

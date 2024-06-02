@@ -12,6 +12,9 @@ function srcSendInput(){
 	buffer_write(buffer, buffer_f16, input.salto);
 	buffer_write(buffer, buffer_f16, input.dobleSalto);
 	buffer_write(buffer, buffer_f16, input.contadorSalto);
+	buffer_write(buffer, buffer_f16, input.escaleraArriba);
+	buffer_write(buffer, buffer_f16, input.escaleraAbajo);
+	
 	
 	//Enviamos el buffer al servidor
 	network_send_packet(global.CLIENT,buffer,buffer_get_size(buffer));

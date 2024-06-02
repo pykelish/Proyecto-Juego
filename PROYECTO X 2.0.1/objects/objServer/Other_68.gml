@@ -47,6 +47,8 @@ if(type == network_type_data){
 		var salto= buffer_read(buffer, buffer_f16);
 		var dobleSalto = buffer_read(buffer, buffer_f16);
 		var contadorSalto = buffer_read(buffer, buffer_f16);
+		var escaleraUp = buffer_read(buffer, buffer_f16);
+		var escaleraDown = buffer_read(buffer, buffer_f16);
 		
 		
 		//Recorremos el arreglo de jugadores para saber cual es el que nos envió el buffer
@@ -64,7 +66,10 @@ if(type == network_type_data){
 				instance.input.correr = correr;
 				instance.input.salto = salto;
 				instance.input.dobleSalto = dobleSalto;
-				instance.input.contadorSalto= contadorSalto;
+				instance.input.contadorSalto = contadorSalto;
+				instance.input.escaleraArriba = escaleraUp;
+				instance.input.escaleraAbajo = escaleraDown;
+				
 				break;
 		
 		}

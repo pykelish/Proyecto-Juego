@@ -63,6 +63,8 @@ if(type == network_type_data){
 			var inputSalto = buffer_read (buffer, buffer_f16);
 			var inputDobleSalto = buffer_read (buffer, buffer_f16);
 			var inputContadorSalto = buffer_read (buffer, buffer_f16);
+			var inputEscaleraUp = buffer_read (buffer, buffer_f16);
+			var inputEscaleraDown = buffer_read (buffer, buffer_f16);
 			
 			if(serverId == global.SERVER_ID){
 				
@@ -80,6 +82,9 @@ if(type == network_type_data){
 			instance.input.salto = inputSalto;
 			instance.input.dobleSalto = inputDobleSalto;
 			instance.input.contadorSalto = inputContadorSalto;
+			instance.input.escaleraArriba = inputEscaleraUp;
+			instance.input.escaleraAbajo = inputEscaleraDown;
+			
 			
 			
 		

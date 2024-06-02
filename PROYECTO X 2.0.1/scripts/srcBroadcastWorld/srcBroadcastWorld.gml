@@ -19,6 +19,9 @@ function srcBroadcastWorld(){
 		buffer_write(buffer, buffer_f16, instance.input.salto);
 		buffer_write(buffer, buffer_f16, instance.input.dobleSalto);
 		buffer_write(buffer, buffer_f16, instance.input.contadorSalto);
+		buffer_write(buffer, buffer_f16, instance.input.escaleraArriba);
+		buffer_write(buffer, buffer_f16, instance.input.escaleraAbajo);
+		
 	
 	}
 	var bufferSize = buffer_get_size(buffer);

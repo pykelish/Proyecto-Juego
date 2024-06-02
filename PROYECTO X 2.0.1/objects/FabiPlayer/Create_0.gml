@@ -6,7 +6,9 @@ input = {
 	correr:0,
 	salto:0,
 	dobleSalto:false,
-	contadorSalto:0
+	contadorSalto:0,
+	escaleraArriba:0,
+	escaleraAbajo:0
 	
 };
 
@@ -20,16 +22,18 @@ lastInput = {
 	correr:0,
 	salto:0,
 	dobleSalto:false,
-	contadorSalto:0
+	contadorSalto:0,
+	escaleraArriba:0,
+	escaleraAbajo:0
 	
 };
 
 
 // En el evento Create del objeto controlador
 saltoDoble = 0;
-
+enEscalera = false;
 Punto = 0; 
-
+vy = 0;
 
 /*
 event_inherited();
