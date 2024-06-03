@@ -33,7 +33,7 @@ if(place_meeting(x, y + 1, ParePara) && enEscalera = true){
 
 
 
-if (vspeed > 0){
+if (vspeed > 0 && enEscalera = false){
 	var piso = collision_rectangle(x - 8, y, x + 8, y + vspeed, Pared, false, false);
 	if (piso){
 		y = piso.y;
@@ -42,7 +42,7 @@ if (vspeed > 0){
 		
 	}
 	
-} else if(vspeed < 0) {
+} else if(vspeed < 0 && enEscalera = false) {
 	var techo = collision_rectangle(x - 8, y - 90, x + 8, y - 90 + vspeed, Pared, false, false);		
 	if (techo) {
 		y = techo.y + techo.sprite_height + 90;
@@ -52,6 +52,8 @@ if (vspeed > 0){
 	
 	
 }
+
+
 
 
 

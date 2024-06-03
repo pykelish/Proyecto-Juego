@@ -9,5 +9,5 @@ if(!global.IS_SERVER){
 global.PLAYERS = [];
 global.PLAYER_SERVER_ID =0;
 
-global.UPDATE_WORLD_FREQUENCY = floor(game_get_speed(gamespeed_fps) / 30);
+global.UPDATE_WORLD_FREQUENCY = floor(game_get_speed(gamespeed_fps) / 60);
 alarm[0] = global.UPDATE_WORLD_FREQUENCY;
