@@ -24,10 +24,10 @@
     {"$GMFolder":"","%Name":"Objetos Room 1","folderPath":"folders/Objetos Room 1.yy","name":"Objetos Room 1","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Objetos","folderPath":"folders/Objetos.yy","name":"Objetos","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Enemigos","folderPath":"folders/Objetos/Enemigos.yy","name":"Enemigos","resourceType":"GMFolder","resourceVersion":"2.0",},
-    {"$GMFolder":"","%Name":"TextosQuest","folderPath":"folders/Objetos/TextosQuest.yy","name":"TextosQuest","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Multijugador","folderPath":"folders/Objetos/Multijugador.yy","name":"Multijugador","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Characters","folderPath":"folders/Objetos/Multijugador/Characters.yy","name":"Characters","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Puntos e Items","folderPath":"folders/Objetos/Puntos e Items.yy","name":"Puntos e Items","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"TextosQuest","folderPath":"folders/Objetos/TextosQuest.yy","name":"TextosQuest","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Paths","folderPath":"folders/Paths.yy","name":"Paths","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Rooms","folderPath":"folders/Rooms.yy","name":"Rooms","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Scripts","folderPath":"folders/Scripts.yy","name":"Scripts","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -78,7 +78,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.4.0.137",
+    "IDEVersion":"2024.4.1.152",
   },
   "name":"PROYECTO X 2.0.1",
   "resources":[
@@ -112,6 +112,9 @@
     {"id":{"name":"Puntos","path":"objects/Puntos/Puntos.yy",},},
     {"id":{"name":"SonidoBumerang","path":"objects/SonidoBumerang/SonidoBumerang.yy",},},
     {"id":{"name":"SonSalto","path":"objects/SonSalto/SonSalto.yy",},},
+    {"id":{"name":"Tareas_Texto1","path":"objects/Tareas_Texto1/Tareas_Texto1.yy",},},
+    {"id":{"name":"Tareas_Texto2","path":"objects/Tareas_Texto2/Tareas_Texto2.yy",},},
+    {"id":{"name":"Tareas_Texto3","path":"objects/Tareas_Texto3/Tareas_Texto3.yy",},},
     {"id":{"name":"TextoGanar","path":"objects/TextoGanar/TextoGanar.yy",},},
     {"id":{"name":"MenuMultiplayer","path":"rooms/MenuMultiplayer/MenuMultiplayer.yy",},},
     {"id":{"name":"Room_Test_EMA","path":"rooms/Room_Test_EMA/Room_Test_EMA.yy",},},
@@ -420,10 +423,10 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
+    {"roomId":{"name":"Room4","path":"rooms/Room4/Room4.yy",},},
     {"roomId":{"name":"MenuMultiplayer","path":"rooms/MenuMultiplayer/MenuMultiplayer.yy",},},
     {"roomId":{"name":"Room_Test_EMA","path":"rooms/Room_Test_EMA/Room_Test_EMA.yy",},},
     {"roomId":{"name":"Room_Test","path":"rooms/Room_Test/Room_Test.yy",},},
-    {"roomId":{"name":"Room4","path":"rooms/Room4/Room4.yy",},},
   ],
   "templateType":null,
   "TextureGroups":[
