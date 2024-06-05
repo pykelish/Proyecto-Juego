@@ -78,7 +78,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.4.1.152",
+    "IDEVersion":"2024.4.0.137",
   },
   "name":"PROYECTO X 2.0.1",
   "resources":[
@@ -114,6 +114,7 @@
     {"id":{"name":"SonidoBumerang","path":"objects/SonidoBumerang/SonidoBumerang.yy",},},
     {"id":{"name":"SonSalto","path":"objects/SonSalto/SonSalto.yy",},},
     {"id":{"name":"Tareas_Texto1","path":"objects/Tareas_Texto1/Tareas_Texto1.yy",},},
+    {"id":{"name":"Tareas_Texto2_1","path":"objects/Tareas_Texto2_1/Tareas_Texto2_1.yy",},},
     {"id":{"name":"Tareas_Texto2","path":"objects/Tareas_Texto2/Tareas_Texto2.yy",},},
     {"id":{"name":"Tareas_Texto3","path":"objects/Tareas_Texto3/Tareas_Texto3.yy",},},
     {"id":{"name":"Tareas_Texto4","path":"objects/Tareas_Texto4/Tareas_Texto4.yy",},},
