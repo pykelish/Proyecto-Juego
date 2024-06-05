@@ -43,6 +43,7 @@
   "ResourceOrderSettings":[
     {"name":"fnt_texto2","order":1,"path":"fonts/fnt_texto2/fnt_texto2.yy",},
     {"name":"Font3","order":31,"path":"fonts/Font3/Font3.yy",},
+    {"name":"Quest_Grande","order":3,"path":"fonts/Quest_Grande/Quest_Grande.yy",},
     {"name":"Quest","order":2,"path":"fonts/Quest/Quest.yy",},
     {"name":"Boss","order":33,"path":"objects/Boss/Boss.yy",},
     {"name":"BossCaminar","order":12,"path":"objects/BossCaminar/BossCaminar.yy",},
@@ -67,6 +68,7 @@
     {"name":"SonSalto","order":5,"path":"objects/SonSalto/SonSalto.yy",},
     {"name":"Tareas_Texto2","order":1,"path":"objects/Tareas_Texto2/Tareas_Texto2.yy",},
     {"name":"Tareas_Texto3","order":2,"path":"objects/Tareas_Texto3/Tareas_Texto3.yy",},
+    {"name":"Tareas_Texto4","order":3,"path":"objects/Tareas_Texto4/Tareas_Texto4.yy",},
     {"name":"TextoGanar","order":9,"path":"objects/TextoGanar/TextoGanar.yy",},
     {"name":"MenuMultiplayer","order":20,"path":"rooms/MenuMultiplayer/MenuMultiplayer.yy",},
     {"name":"Room_Test_EMA","order":19,"path":"rooms/Room_Test_EMA/Room_Test_EMA.yy",},
