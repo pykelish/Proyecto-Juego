@@ -1,10 +1,10 @@
 {
   "$GMSprite":"",
-  "%Name":"vegetation_grass_small",
+  "%Name":"vegetation_grass_rock_trunk_5",
   "bboxMode":0,
-  "bbox_bottom":15,
+  "bbox_bottom":31,
   "bbox_left":1,
-  "bbox_right":15,
+  "bbox_right":29,
   "bbox_top":3,
   "collisionKind":1,
   "collisionTolerance":0,
@@ -12,16 +12,16 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"d186c5c9-cf63-429c-b691-875ee404e8e9","name":"d186c5c9-cf63-429c-b691-875ee404e8e9","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"9d4a30ee-fd57-4d8b-b7b9-e1c0367f8369","name":"9d4a30ee-fd57-4d8b-b7b9-e1c0367f8369","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
-  "height":16,
+  "height":32,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"ec519c7a-ffe1-4f6d-aa06-621119c2915b","blendMode":0,"displayName":"default","isLocked":false,"name":"ec519c7a-ffe1-4f6d-aa06-621119c2915b","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"b6691f29-4cb4-46a7-9fa8-c3bfb1a7f9b6","blendMode":0,"displayName":"default","isLocked":false,"name":"b6691f29-4cb4-46a7-9fa8-c3bfb1a7f9b6","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
-  "name":"vegetation_grass_small",
+  "name":"vegetation_grass_rock_trunk_5",
   "nineSlice":null,
   "origin":0,
   "parent":{
@@ -33,7 +33,7 @@
   "resourceVersion":"2.0",
   "sequence":{
     "$GMSequence":"",
-    "%Name":"vegetation_grass_small",
+    "%Name":"vegetation_grass_rock_trunk",
     "autoRecord":true,
     "backdropHeight":768,
     "backdropImageOpacity":0.5,
@@ -57,7 +57,7 @@
       "resourceType":"KeyframeStore<MomentsEventKeyframe>",
       "resourceVersion":"2.0",
     },
-    "name":"vegetation_grass_small",
+    "name":"vegetation_grass_rock_trunk",
     "playback":1,
     "playbackSpeed":30.0,
     "playbackSpeedType":0,
@@ -69,8 +69,8 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"d186c5c9-cf63-429c-b691-875ee404e8e9","path":"sprites/vegetation_grass_small/vegetation_grass_small.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"678fdc62-4de8-4aec-93fc-c08a63f7b3b7","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"9d4a30ee-fd57-4d8b-b7b9-e1c0367f8369","path":"sprites/vegetation_grass_rock_trunk_5/vegetation_grass_rock_trunk_5.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"22a92715-c091-4ffd-8466-fee563cf5de7","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
@@ -86,5 +86,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":16,
+  "width":32,
 }

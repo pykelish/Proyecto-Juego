@@ -1,18 +1,18 @@
 {
   "$GMSprite":"",
-  "%Name":"vegetation_grass_small",
+  "%Name":"vegetation_grass_small_3",
   "bboxMode":0,
   "bbox_bottom":15,
-  "bbox_left":1,
-  "bbox_right":15,
-  "bbox_top":3,
+  "bbox_left":4,
+  "bbox_right":12,
+  "bbox_top":7,
   "collisionKind":1,
   "collisionTolerance":0,
   "DynamicTexturePage":false,
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"d186c5c9-cf63-429c-b691-875ee404e8e9","name":"d186c5c9-cf63-429c-b691-875ee404e8e9","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"e9494ddb-2dc0-44d6-95d1-21964ff12f6c","name":"e9494ddb-2dc0-44d6-95d1-21964ff12f6c","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
@@ -21,7 +21,7 @@
   "layers":[
     {"$GMImageLayer":"","%Name":"ec519c7a-ffe1-4f6d-aa06-621119c2915b","blendMode":0,"displayName":"default","isLocked":false,"name":"ec519c7a-ffe1-4f6d-aa06-621119c2915b","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
-  "name":"vegetation_grass_small",
+  "name":"vegetation_grass_small_3",
   "nineSlice":null,
   "origin":0,
   "parent":{
@@ -69,8 +69,8 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"d186c5c9-cf63-429c-b691-875ee404e8e9","path":"sprites/vegetation_grass_small/vegetation_grass_small.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"678fdc62-4de8-4aec-93fc-c08a63f7b3b7","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"e9494ddb-2dc0-44d6-95d1-21964ff12f6c","path":"sprites/vegetation_grass_small_3/vegetation_grass_small_3.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"204e8dd7-ad9c-4353-bdf9-75cb69949ec0","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
