@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"Ocean",
-    "path":"folders/Sprites BackgroundGame/BG_Level1/Ocean.yy",
+    "name":"Background",
+    "path":"folders/Sprites BackgroundGame/BG_Level1/Ocean/Background.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
