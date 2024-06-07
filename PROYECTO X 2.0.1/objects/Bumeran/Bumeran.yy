@@ -12,8 +12,8 @@
   "name":"Bumeran",
   "overriddenProperties":[],
   "parent":{
-    "name":"Items y minorias",
-    "path":"folders/Items y minorias.yy",
+    "name":"ItemsJugador",
+    "path":"folders/Items y minorias/ItemsJugador.yy",
   },
   "parentObjectId":null,
   "persistent":false,
