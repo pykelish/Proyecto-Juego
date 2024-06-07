@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"Items y minorias",
-    "path":"folders/Items y minorias.yy",
+    "name":"ItemsJugador",
+    "path":"folders/Items y minorias/ItemsJugador.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

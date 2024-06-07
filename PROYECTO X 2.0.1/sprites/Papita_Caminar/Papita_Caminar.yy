@@ -27,8 +27,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"Enemigos",
-    "path":"folders/Enemigos.yy",
+    "name":"Enemigos Extra",
+    "path":"folders/Enemigos/Enemigos Extra.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
