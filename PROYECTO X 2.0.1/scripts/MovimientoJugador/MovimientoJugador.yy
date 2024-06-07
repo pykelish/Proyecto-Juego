@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"MovimientoJugador",
   "parent":{
-    "name":"Scripts",
-    "path":"folders/Scripts.yy",
+    "name":"BasicMovements",
+    "path":"folders/Scripts/BasicMovements.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",
