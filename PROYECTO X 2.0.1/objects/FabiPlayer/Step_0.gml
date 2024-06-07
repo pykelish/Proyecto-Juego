@@ -4,6 +4,7 @@ input.correr = keyboard_check(vk_shift);
 input.salto = keyboard_check_pressed(vk_space);
 input.escaleraArriba = keyboard_check(vk_up);
 input.escaleraAbajo = keyboard_check(vk_down);
+input.gameOver = keyboard_check_pressed(ord("Q"));
 //Si está en movimiento, se cambia de posición IMPORTANTE USAR INPUT CON LA PROPIEDAD...
 //... DEL MOVIMIENTO
 if(enEscalera == true && !place_meeting(x,y,ParePara)){
@@ -17,12 +18,12 @@ if(place_meeting(x,y,ParePara) && place_meeting(x,y+1,Pared)){
 	}
 }
 
-if(place_meeting(x,y+1,ParePara)){
+/*if(place_meeting(x,y+1,ParePara)){
 	if(input.escaleraAbajo){
 		enEscalera = true;
 		
 	}
-}
+}*/
 
 if(enEscalera == true && input.escaleraArriba){
 	y = y - 3;
@@ -37,7 +38,7 @@ if(enEscalera == true && input.escaleraArriba){
 	
 }
 
-if(enEscalera == true && input.escaleraAbajo){
+/*if(enEscalera == true && input.escaleraAbajo){
 	var wallID, itsOK;
 	itsOK = false;
 	wallID = instance_place(x,y+3,Pared);
@@ -58,12 +59,27 @@ if(enEscalera == true && input.escaleraAbajo){
 	}
 
 
-}
+}*/
 
 
 
 
 if(input.movi != 0) {
+	
+	/*var xTo = x + input.movi * 3
+	for (var i = -4; i < 4; i++){
+		var piso = collision_rectangle(xTo - 8, y -i-1, xTo + 8, y - 1, Pared, true, true);
+		if(!piso || !piso.solid){
+			x = xTo;
+			if(vspeed == 0){
+				y -= i - 1;
+			}
+			break;
+		}
+		sprite_index = Pink_Monster_Walk;
+		image_xscale = sign(input.movi);
+	}*/
+	
 	
 	if(!place_meeting(x + input.movi * 10, y, Pared) && enEscalera = false) { ///para verificar si a donde queremos caminar es un lugar libre (colisiones)
 		x += input.movi * 3;

@@ -7,6 +7,7 @@ function didInputChange(){
 	|| input.dobleSalto != lastInput.dobleSalto 
 	|| input.contadorSalto != lastInput.contadorSalto 
 	|| input.escaleraArriba != lastInput.escaleraArriba 
-	|| input.escaleraAbajo != lastInput.escaleraAbajo ;
+	|| input.escaleraAbajo != lastInput.escaleraAbajo 
+	|| input.gameOver != lastInput.gameOver;
 
 }

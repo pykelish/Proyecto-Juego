@@ -1,1 +1,0 @@
-Recolectar = false; 

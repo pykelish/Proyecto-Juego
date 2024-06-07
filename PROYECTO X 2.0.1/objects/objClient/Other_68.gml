@@ -65,6 +65,7 @@ if(type == network_type_data){
 			var inputContadorSalto = buffer_read (buffer, buffer_f16);
 			var inputEscaleraUp = buffer_read (buffer, buffer_f16);
 			var inputEscaleraDown = buffer_read (buffer, buffer_f16);
+			var inputGameOver = buffer_read (buffer, buffer_f16);
 			
 			if(serverId == global.SERVER_ID){
 				
@@ -84,6 +85,7 @@ if(type == network_type_data){
 			instance.input.contadorSalto = inputContadorSalto;
 			instance.input.escaleraArriba = inputEscaleraUp;
 			instance.input.escaleraAbajo = inputEscaleraDown;
+			instance.input.gameOver = inputGameOver;
 			
 			
 			

@@ -1,0 +1,1 @@
+Recolectar_Lata = false; 

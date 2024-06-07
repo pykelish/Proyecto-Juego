@@ -14,6 +14,7 @@ function srcSendInput(){
 	buffer_write(buffer, buffer_f16, input.contadorSalto);
 	buffer_write(buffer, buffer_f16, input.escaleraArriba);
 	buffer_write(buffer, buffer_f16, input.escaleraAbajo);
+	buffer_write(buffer, buffer_f16, input.gameOver);
 	
 	
 	//Enviamos el buffer al servidor

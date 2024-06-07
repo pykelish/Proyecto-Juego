@@ -8,6 +8,7 @@ function srcUpdateLastInput(){
 	lastInput.contadorSalto = input.contadorSalto;
 	lastInput.escaleraArriba = input.escaleraArriba;
 	lastInput.escaleraAbajo = input.escaleraAbajo;
+	lastInput.gameOver = input.gameOver;
 	
 
 }

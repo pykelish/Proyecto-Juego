@@ -21,6 +21,7 @@ function srcBroadcastWorld(){
 		buffer_write(buffer, buffer_f16, instance.input.contadorSalto);
 		buffer_write(buffer, buffer_f16, instance.input.escaleraArriba);
 		buffer_write(buffer, buffer_f16, instance.input.escaleraAbajo);
+		buffer_write(buffer, buffer_f16, instance.input.gameOver);
 		
 	
 	}

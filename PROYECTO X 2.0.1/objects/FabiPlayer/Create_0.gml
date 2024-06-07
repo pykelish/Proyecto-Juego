@@ -8,7 +8,8 @@ input = {
 	dobleSalto:false,
 	contadorSalto:0,
 	escaleraArriba:0,
-	escaleraAbajo:0
+	escaleraAbajo:0,
+	gameOver:0
 	
 };
 
@@ -24,7 +25,8 @@ lastInput = {
 	dobleSalto:false,
 	contadorSalto:0,
 	escaleraArriba:0,
-	escaleraAbajo:0
+	escaleraAbajo:0,
+	gameOver:0
 	
 };
 
