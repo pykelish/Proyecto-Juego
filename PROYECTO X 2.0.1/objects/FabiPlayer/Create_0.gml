@@ -37,6 +37,7 @@ enEscalera = false;
 Punto = 0; 
 vy = 0;
 
+
 /*
 event_inherited();
 DisparoRatio = 0; 
