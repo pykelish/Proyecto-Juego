@@ -33,7 +33,7 @@
   "origin":0,
   "parent":{
     "name":"Items",
-    "path":"folders/Sprites BackgroundGame/BG_Level1/Items.yy",
+    "path":"folders/Sprites BackgroundGame/BG_Level1/General/Items.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

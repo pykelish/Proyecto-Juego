@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"Suelos",
-    "path":"folders/Sprites BackgroundGame/BG_Level1/Forest/Suelos.yy",
+    "name":"Floors",
+    "path":"folders/Sprites BackgroundGame/BG_Level1/Forest/Floors.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

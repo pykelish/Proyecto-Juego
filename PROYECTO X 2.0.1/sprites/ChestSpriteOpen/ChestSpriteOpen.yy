@@ -30,7 +30,7 @@
   "origin":0,
   "parent":{
     "name":"Objects",
-    "path":"folders/Sprites BackgroundGame/BG_Level1/Forest/Addons/Objects.yy",
+    "path":"folders/Sprites BackgroundGame/BG_Level1/General/Objects.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

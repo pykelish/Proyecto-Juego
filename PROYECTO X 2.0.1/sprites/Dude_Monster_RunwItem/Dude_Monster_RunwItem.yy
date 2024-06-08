@@ -31,7 +31,7 @@
   "origin":0,
   "parent":{
     "name":"Dude_Monster",
-    "path":"folders/Sprites BackgroundGame/BG_Level1/Characters/Dude_Monster.yy",
+    "path":"folders/Sprites BackgroundGame/BG_Level1/General/Characters/Dude_Monster.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

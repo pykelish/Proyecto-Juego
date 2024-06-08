@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"Plants",
-    "path":"folders/Sprites BackgroundGame/BG_Level1/Forest/Addons/Plants.yy",
+    "name":"Addons",
+    "path":"folders/Sprites BackgroundGame/BG_Level1/Forest/Addons.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

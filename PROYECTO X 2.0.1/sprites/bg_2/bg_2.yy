@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"City",
-    "path":"folders/Sprites BackgroundGame/BG_Level1/City.yy",
+    "name":"Background",
+    "path":"folders/Sprites BackgroundGame/BG_Level1/City/Background.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

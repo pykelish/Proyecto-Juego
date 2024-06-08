@@ -30,7 +30,7 @@
   "origin":7,
   "parent":{
     "name":"Pink_Monster",
-    "path":"folders/Sprites BackgroundGame/BG_Level1/Characters/Pink_Monster.yy",
+    "path":"folders/Sprites BackgroundGame/BG_Level1/General/Characters/Pink_Monster.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

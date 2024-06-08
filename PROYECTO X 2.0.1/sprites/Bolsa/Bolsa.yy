@@ -45,7 +45,7 @@
   "origin":4,
   "parent":{
     "name":"Trash",
-    "path":"folders/Sprites BackgroundGame/BG_Level1/Items/Trash.yy",
+    "path":"folders/Sprites BackgroundGame/BG_Level1/General/Items/Trash.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

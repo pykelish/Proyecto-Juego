@@ -33,7 +33,7 @@
   "origin":0,
   "parent":{
     "name":"Owlet_Monster",
-    "path":"folders/Sprites BackgroundGame/BG_Level1/Characters/Owlet_Monster.yy",
+    "path":"folders/Sprites BackgroundGame/BG_Level1/General/Characters/Owlet_Monster.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
