@@ -1,11 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"objSelector",
-  "eventList":[
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":4,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"objLoads",
+  "eventList":[],
   "managed":true,
-  "name":"objSelector",
+  "name":"objLoads",
   "overriddenProperties":[],
   "parent":{
     "name":"BDD",
@@ -29,10 +27,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"Pink_Monster_Idle",
-    "path":"sprites/Pink_Monster_Idle/Pink_Monster_Idle.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

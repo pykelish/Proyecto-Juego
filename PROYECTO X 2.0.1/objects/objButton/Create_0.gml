@@ -1,2 +1,3 @@
-image_speed = 0;
-enabled = true;
+/// @description Inserte aquí la descripción
+// Puede escribir su código en este editor
+enabled=true;

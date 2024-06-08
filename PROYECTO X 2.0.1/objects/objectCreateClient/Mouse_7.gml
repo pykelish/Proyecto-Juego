@@ -15,4 +15,4 @@ if(connection <0){
 
 //Decimos que esta sesión no es servidor uwu
 global.IS_SERVER=false;
-room_goto(Room_Test_EMA);
+room_goto(ClientSelector);

@@ -1,3 +1,4 @@
 /// @description Inserte aquí la descripción
 // Puede escribir su código en este editor
-visible = !global.LOADING && global.ERROR =="";
+event_inherited();
+get= http_get("http://localhost:8080/players/");

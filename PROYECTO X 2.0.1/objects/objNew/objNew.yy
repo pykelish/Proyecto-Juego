@@ -9,7 +9,10 @@
     "name":"BDD",
     "path":"folders/Objetos/BDD.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"objButton",
+    "path":"objects/objButton/objButton.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -27,7 +30,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"new",
+    "path":"sprites/new/new.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

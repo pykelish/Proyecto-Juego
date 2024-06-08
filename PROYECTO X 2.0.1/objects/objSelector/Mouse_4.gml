@@ -1,3 +1,8 @@
 /// @description Inserte aquí la descripción
 // Puede escribir su código en este editor
-visible = !global.LOADING && global.ERROR =="";
+with(objSelector){
+
+	_selected = false;
+
+}
+_selected = true;
