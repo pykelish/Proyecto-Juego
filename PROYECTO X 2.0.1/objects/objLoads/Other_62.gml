@@ -21,6 +21,14 @@ if (ds_map_find_value(async_load, "id") == get) {
 				_highscore = ds_map_find_value(map, "highscore");
 			
 				_selected = i == 0;
+				
+				if(_selected){
+				
+					global._id = ds_map_find_value(map, "id");
+					global._name = ds_map_find_value(map, "name");
+					global._highscore = ds_map_find_value(map, "highscore");
+				
+				}
 			}
 			xx+=150;
 			ds_map_destroy(map);

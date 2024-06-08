@@ -8,7 +8,7 @@ if(global.IS_SERVER){
 }
 
 //Usamos getString solo para pruebas, lo apto es usar interfaz gráfica
-var playerName = get_string("Ingrese su nombre de usuario", "");
+var playerName = global._name;
 srcRegisterUser(playerName);
 
 instance_create_layer(128,384, "Instances_1",FabiPlayer);

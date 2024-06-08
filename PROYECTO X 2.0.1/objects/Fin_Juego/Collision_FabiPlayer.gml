@@ -13,4 +13,5 @@ if (place_meeting(x, y, FabiPlayer) && !Final) {
 
 if (Final) {
     room_goto(Game_Over);
+	show_message(string(FabiPlayer.Punto));
 }

@@ -1,19 +1,20 @@
 {
   "$GMObject":"",
-  "%Name":"objSelector",
+  "%Name":"objContinue",
   "eventList":[
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":4,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"objSelector",
+  "name":"objContinue",
   "overriddenProperties":[],
   "parent":{
     "name":"BDD",
     "path":"folders/Objetos/BDD.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"objButton",
+    "path":"objects/objButton/objButton.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -32,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Pink_Monster_Idle",
-    "path":"sprites/Pink_Monster_Idle/Pink_Monster_Idle.yy",
+    "name":"_4518676_200",
+    "path":"sprites/_4518676_200/_4518676_200.yy",
   },
   "spriteMaskId":null,
   "visible":true,
