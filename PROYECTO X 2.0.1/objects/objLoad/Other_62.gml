@@ -10,7 +10,6 @@ if (ds_map_find_value(async_load, "id") == get) {
 		
 	   ds_list_destroy(list);
 	   ds_map_destroy(resultMap);
-	   show_message(result);
     }
 }else {
 	
