@@ -9,8 +9,11 @@
 
 if (place_meeting(x, y, FabiPlayer) && !Final) {
 	
-    Final = true;    // Crear un JSON con los datos
+    Final = true;    
+	
+	// Crear un JSON con los datos
     // Crear un nuevo mapa (ds_map) para almacenar los datos JSON
+	
 	var json_map = ds_map_create();
 	ds_map_add(json_map, "id", global._id);
 	ds_map_add(json_map, "highscore", FabiPlayer.Punto);
@@ -26,7 +29,7 @@ if (place_meeting(x, y, FabiPlayer) && !Final) {
 
 
 	// Configurar la solicitud HTTP con los encabezados actualizados
-	var request = http_request("http://localhost:8080/highscore/", "PUT", headers, json_data);
+	global.Update_request = http_request("http://localhost:8080/highscore/", "PUT", headers, json_data);
 
 
     // Liberar la memoria del mapa
@@ -39,13 +42,6 @@ if (place_meeting(x, y, FabiPlayer) && !Final) {
 if (Final) {
 	
 	show_message("Puntuación obtenida: " + string(FabiPlayer.Punto));
-	
-    if (request != -1) {
-		
-        show_message("¡Felicidades, tu nueva puntuación máxima se actualizó correctamente!");
-		
-    }
-    room_goto(Game_Over);
 	
 }
 
