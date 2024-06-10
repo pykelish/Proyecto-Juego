@@ -22,7 +22,7 @@ if (async_load[? "id"] == global.async_request_id) {
         ds_map_add(headers, "Content-Type", "application/json");
 
         // Configurar la solicitud HTTP con los encabezados actualizados
-        global.login_request = http_request("http://localhost:8080/login/", "POST", headers, json_data);
+        global.login_request = http_request("http://192.168.1.170:8080/login/", "POST", headers, json_data);
 
         // Liberar la memoria del mapa
         ds_map_destroy(json_map);

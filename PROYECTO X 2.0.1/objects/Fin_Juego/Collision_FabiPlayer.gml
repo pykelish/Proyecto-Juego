@@ -29,7 +29,7 @@ if (place_meeting(x, y, FabiPlayer) && !Final) {
 
 
 	// Configurar la solicitud HTTP con los encabezados actualizados
-	global.Update_request = http_request("http://localhost:8080/highscore/", "PUT", headers, json_data);
+	global.Update_request = http_request("http://192.168.1.170:8080/highscore/", "PUT", headers, json_data);
 
 
     // Liberar la memoria del mapa
