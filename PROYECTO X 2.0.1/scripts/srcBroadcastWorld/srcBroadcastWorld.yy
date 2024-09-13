@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"srcBroadcastWorld",
   "isCompatibility":false,
   "isDnD":false,

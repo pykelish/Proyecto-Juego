@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"srcRegisterUser",
   "isCompatibility":false,
   "isDnD":false,

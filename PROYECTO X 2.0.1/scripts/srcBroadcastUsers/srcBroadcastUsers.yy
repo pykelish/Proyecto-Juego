@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"srcBroadcastUsers",
   "isCompatibility":false,
   "isDnD":false,

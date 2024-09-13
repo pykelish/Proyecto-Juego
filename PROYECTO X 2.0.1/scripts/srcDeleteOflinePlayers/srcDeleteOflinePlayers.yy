@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"srcDeleteOflinePlayers",
   "isCompatibility":false,
   "isDnD":false,
