@@ -66,22 +66,36 @@ if(enEscalera == true && input.escaleraArriba){
 
 if(input.movi != 0) {
 	
-	/*var xTo = x + input.movi * 3
-	for (var i = -4; i < 4; i++){
-		var piso = collision_rectangle(xTo - 8, y -i-1, xTo + 8, y - 1, Pared, true, true);
+	var xTo = x + input.movi * 3
+	var moved = false;
+	for (var i = 1; i < 8; i++){
+		var piso = collision_rectangle(xTo - 8, y-i-1, xTo + 8, y-i, Pared, true, true);
 		if(!piso || !piso.solid){
 			x = xTo;
+			sprite_index = Pink_Monster_Walk;
+			image_xscale = sign(input.movi);
+			moved = true;
 			if(vspeed == 0){
 				y -= i - 1;
 			}
 			break;
 		}
-		sprite_index = Pink_Monster_Walk;
-		image_xscale = sign(input.movi);
-	}*/
+		
+		if(vspeed == 0 && moved){
+			for(var i = 1; i < 8; i++){
+				var piso = collision_rectangle(xTo-8, y+i-1, xTo+8, y+i, Rampa, true, true);
+				if(piso){
+					y+=i;
+					break;
+				}
+			}
+		}
+
+		
+	}
 	
 	
-	if(!place_meeting(x + input.movi * 10, y, Pared) && enEscalera = false) { ///para verificar si a donde queremos caminar es un lugar libre (colisiones)
+	/*if(!place_meeting(x + input.movi * 10, y, Pared) && enEscalera = false) { ///para verificar si a donde queremos caminar es un lugar libre (colisiones)
 		x += input.movi * 3;
 		image_xscale= sign(input.movi);
 		sprite_index = Pink_Monster_Walk;
@@ -91,7 +105,7 @@ if(input.movi != 0) {
 		x += input.movi * 3;
 		image_xscale = sign(input.movi);
 		sprite_index = Pink_Monster_Run;
-	}
+	}*/
 		
 
 	
