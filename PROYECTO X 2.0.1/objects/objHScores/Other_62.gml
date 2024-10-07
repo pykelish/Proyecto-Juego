@@ -1,3 +1,5 @@
+/// @description Inserte aquí la descripción
+// Puede escribir su código en este editor
 if (ds_map_find_value(async_load, "id") == get) {
 	
     if (ds_map_find_value(async_load, "status") == 0) {

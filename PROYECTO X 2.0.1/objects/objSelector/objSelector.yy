@@ -10,8 +10,8 @@
   "name":"objSelector",
   "overriddenProperties":[],
   "parent":{
-    "name":"BDD",
-    "path":"folders/Objetos/BDD.yy",
+    "name":"ObjsComuns",
+    "path":"folders/Objetos/BDD/ObjsComuns.yy",
   },
   "parentObjectId":null,
   "persistent":false,

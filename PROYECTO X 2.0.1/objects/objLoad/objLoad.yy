@@ -10,8 +10,8 @@
   "name":"objLoad",
   "overriddenProperties":[],
   "parent":{
-    "name":"BDD",
-    "path":"folders/Objetos/BDD.yy",
+    "name":"CargaJugadores",
+    "path":"folders/Objetos/BDD/CargaJugadores.yy",
   },
   "parentObjectId":{
     "name":"objButton",

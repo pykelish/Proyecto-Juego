@@ -1,13 +1,15 @@
 {
   "$GMObject":"",
   "%Name":"objNew",
-  "eventList":[],
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":7,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
   "name":"objNew",
   "overriddenProperties":[],
   "parent":{
-    "name":"BDD",
-    "path":"folders/Objetos/BDD.yy",
+    "name":"RegistroJugador",
+    "path":"folders/Objetos/BDD/RegistroJugador.yy",
   },
   "parentObjectId":{
     "name":"objButton",

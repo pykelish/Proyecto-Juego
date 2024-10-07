@@ -1,18 +1,18 @@
 {
   "$GMObject":"",
-  "%Name":"objLoads",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":62,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"objTableHS",
+  "eventList":[],
   "managed":true,
-  "name":"objLoads",
+  "name":"objTableHS",
   "overriddenProperties":[],
   "parent":{
-    "name":"CargaJugadores",
-    "path":"folders/Objetos/BDD/CargaJugadores.yy",
+    "name":"CargaHighscores",
+    "path":"folders/Objetos/BDD/CargaHighscores.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"objButton",
+    "path":"objects/objButton/objButton.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -30,7 +30,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"hs",
+    "path":"sprites/hs/hs.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

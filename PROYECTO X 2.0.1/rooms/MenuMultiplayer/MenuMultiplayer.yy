@@ -1,7 +1,7 @@
 {
   "$GMRoom":"v1",
   "%Name":"MenuMultiplayer",
-  "creationCodeFile":"",
+  "creationCodeFile":"rooms/MenuMultiplayer/RoomCreationCode.gml",
   "inheritCode":false,
   "inheritCreationOrder":false,
   "inheritLayers":false,
