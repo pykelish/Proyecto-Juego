@@ -38,7 +38,7 @@ if(enEscalera == true && input.escaleraArriba){
 	
 }
 
-/*if(enEscalera == true && input.escaleraAbajo){
+if(enEscalera == true && input.escaleraAbajo){
 	var wallID, itsOK;
 	itsOK = false;
 	wallID = instance_place(x,y+3,Pared);
@@ -59,21 +59,29 @@ if(enEscalera == true && input.escaleraArriba){
 	}
 
 
-}*/
+}
 
 
 
 
 if(input.movi != 0) {
 	
+		
 	var xTo = x + input.movi * 3
 	var moved = false;
 	for (var i = 1; i < 8; i++){
-		var piso = collision_rectangle(xTo - 8, y-i-1, xTo + 8, y-i, Pared, true, true);
+		var piso = collision_rectangle(xTo - 6, y-i-1, xTo + 6, y-i, Pared, true, true);
 		if(!piso || !piso.solid){
-			x = xTo;
-			sprite_index = Pink_Monster_Walk;
-			image_xscale = sign(input.movi);
+			if(input.correr){
+				x = x + input.movi * 6;
+				sprite_index = Pink_Monster_Run;
+				image_xscale = sign(input.movi);
+			} else {
+				x = xTo;
+				sprite_index = Pink_Monster_Walk;
+				image_xscale = sign(input.movi);
+			}
+			
 			moved = true;
 			if(vspeed == 0){
 				y -= i - 1;
@@ -83,14 +91,14 @@ if(input.movi != 0) {
 		
 		if(vspeed == 0 && moved){
 			for(var i = 1; i < 8; i++){
-				var piso = collision_rectangle(xTo-8, y+i-1, xTo+8, y+i, Rampa, true, true);
+				var piso = collision_rectangle(xTo-6, y+i-1, xTo+6, y+i, Rampa, true, true);
 				if(piso){
 					y+=i;
 					break;
 				}
 			}
 		}
-
+		image_xscale = sign(input.movi);
 		
 	}
 	

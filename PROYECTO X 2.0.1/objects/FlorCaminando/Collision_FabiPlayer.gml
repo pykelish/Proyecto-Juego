@@ -1,1 +1,1 @@
-///other.hp -= damage; 
+///other.hp -= damage;
