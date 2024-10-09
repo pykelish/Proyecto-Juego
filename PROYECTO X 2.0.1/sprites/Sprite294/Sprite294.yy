@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"PROYECTO X 2.0.1",
-    "path":"PROYECTO X 2.0.1.yyp",
+    "name":"SpritesRafa",
+    "path":"folders/SpritesRafa.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

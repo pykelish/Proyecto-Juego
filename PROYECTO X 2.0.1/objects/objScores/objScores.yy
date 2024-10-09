@@ -1,20 +1,17 @@
 {
   "$GMObject":"",
-  "%Name":"objTableHS",
+  "%Name":"objScores",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":7,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"objTableHS",
+  "name":"objScores",
   "overriddenProperties":[],
   "parent":{
-    "name":"CargaHighscores",
-    "path":"folders/Objetos/BDD/CargaHighscores.yy",
+    "name":"ObjsComuns",
+    "path":"folders/Objetos/BDD/ObjsComuns.yy",
   },
-  "parentObjectId":{
-    "name":"objButton",
-    "path":"objects/objButton/objButton.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -33,8 +30,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"hs",
-    "path":"sprites/hs/hs.yy",
+    "name":"Portraits2_01",
+    "path":"sprites/Portraits2_01/Portraits2_01.yy",
   },
   "spriteMaskId":null,
   "visible":true,

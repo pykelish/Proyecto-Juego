@@ -12,10 +12,16 @@ if (ds_map_find_value(async_load, "id") == get) {
 		var yy = 100;
 		
 		for (var i=0; i< ds_list_size(list); i++){
-		
+			
+			if (i % 8 == 0 && i > 0) 
+			{
+				xx = 100; // Reiniciar la posición X para la nueva fila
+				yy += 200; // Aumentar la posición Y para la nueva fila
+			}
+			
 			var map = ds_list_find_value(list,i);
 			
-			with(instance_create_layer(xx,yy,"Instances",objSelector)){
+			with(instance_create_layer(xx,yy,"Instances", objScores)){
 			
 				_id = ds_map_find_value(map, "id");
 				_name = ds_map_find_value(map, "name");
@@ -31,7 +37,7 @@ if (ds_map_find_value(async_load, "id") == get) {
 				
 				}
 			}
-			xx+=150;
+			xx+=200;
 			ds_map_destroy(map);
 		
 		}
