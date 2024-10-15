@@ -1,18 +1,12 @@
-if (image_xscale == 1) {
-	x+=2;
-	if (x >= x2) {
-		image_xscale = -1;
+switch (state) {
+	case "idle":
+		scrMovimientoEnemigo();
+		scrEnemigoPersigue();
+		break;
 		
-	}
-} 
-
-if (image_xscale == -1) {
-	x -= 2;
-	if (x <= x1) {
-	image_xscale = 1; 
-	
-	}
-	
+	case "siguiendo":
+		scrEnemigoSiguiendo();
+		break;
 }
 
 

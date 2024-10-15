@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scrEnemigoSiguiendo",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scrEnemigoSiguiendo",
+  "parent":{
+    "name":"BasicMovements",
+    "path":"folders/Scripts/BasicMovements.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

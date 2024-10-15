@@ -73,11 +73,33 @@ if (piso) {
 }
 
 
-if ((!collision_rectangle(x - 8, floor(y), x + 8, ceil(y)+1, Pared, true, true) || vspeed!= 0) && enEscalera==false ){
+/*if ((!collision_rectangle(x - 8, floor(y), x + 8, ceil(y)+1, Pared, true, true) || vspeed!= 0) && enEscalera==false ){
 	gravity = .3; 
+}*/
+
+
+var rampa_inst = instance_place(x, y+1, Pared);
+if ((!collision_rectangle(x - 8, floor(y), x + 8, ceil(y)+1, Pared, true, true) || vspeed != 0) && enEscalera == false) {
+    // Verificar si el personaje está en una rampa
+    if (rampa_inst != noone) {
+        // Si la rampa está invertida
+        if (rampa_inst.image_xscale == -1) {
+            // Ajustar el comportamiento para la rampa invertida
+            gravity = 0;
+            vspeed = 0; // Detener la velocidad vertical en rampas invertidas
+        } 
+        // Si la rampa no está invertida
+        else {
+            gravity = 0;
+            vspeed = 0; // Detener la velocidad vertical en rampas normales
+        }
+    } else {
+        gravity = 0.3; // Gravedad normal si no está en rampas
+    }
+	gravity = 0.3;
+} else {
+    gravity = 0;
 }
-
-
 
 
 if (!place_meeting(x, y + 1, Pared) && enEscalera = false) {

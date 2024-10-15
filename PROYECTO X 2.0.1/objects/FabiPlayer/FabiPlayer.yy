@@ -42,7 +42,7 @@
   "properties":[],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
-  "solid":true,
+  "solid":false,
   "spriteId":{
     "name":"Pink_Monster_Idle",
     "path":"sprites/Pink_Monster_Idle/Pink_Monster_Idle.yy",

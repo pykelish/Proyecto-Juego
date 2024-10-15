@@ -135,10 +135,6 @@ if(collision_rectangle(x - 8, y, x + 8, y + 1, Pared, false, false) && saltoDobl
 
 }
 
-
-
-
-
 /*
 if(state = "muerto"){
 	exit;
