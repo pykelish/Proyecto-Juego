@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"Poss_Code",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Poss_Code",
+  "parent":{
+    "name":"Shit",
+    "path":"folders/Scripts/Shit.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

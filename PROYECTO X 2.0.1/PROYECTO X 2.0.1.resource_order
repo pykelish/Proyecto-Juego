@@ -29,6 +29,7 @@
     {"name":"BasicMovements","order":7,"path":"folders/Scripts/BasicMovements.yy",},
     {"name":"BDD","order":8,"path":"folders/Scripts/BDD.yy",},
     {"name":"Characters","order":6,"path":"folders/Scripts/Characters.yy",},
+    {"name":"Shit","order":9,"path":"folders/Scripts/Shit.yy",},
     {"name":"Networking","order":5,"path":"folders/Scripts/Networking.yy",},
     {"name":"Client","order":4,"path":"folders/Scripts/Networking/Client.yy",},
     {"name":"Server","order":3,"path":"folders/Scripts/Networking/Server.yy",},

@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Flor_Caminar",
-    "path":"sprites/Flor_Caminar/Flor_Caminar.yy",
+    "name":"Run__64x32_",
+    "path":"sprites/Run__64x32_/Run__64x32_.yy",
   },
   "spriteMaskId":null,
   "visible":true,
