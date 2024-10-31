@@ -28,7 +28,7 @@ if(type == network_type_data){
 			var npc = srcDoesPlayerExists(serverId);
 			if(npc == noone){
 				
-				var npc= instance_create_layer(128,384, "Instances_1",objNPC);
+				var npc= instance_create_layer(87,210, "MonedasyObjetos",objNPC);
 				npc.name = playerName;
 				npc.serverId = serverId;
 				

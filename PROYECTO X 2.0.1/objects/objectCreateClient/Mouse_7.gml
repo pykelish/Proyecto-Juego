@@ -4,7 +4,7 @@ global.CLIENT = network_create_socket(network_socket_tcp);
 
 //Guardamos conexión en variable
 //Variable ---- Función de creación(NombreCliente, direcciónIP del servidor, puerto de conexión)
-var connection = network_connect(global.CLIENT, "192.168.1.71" , 6510);
+var connection = network_connect(global.CLIENT, "192.168.1.73" , 6510);
 
 //Validamos que la conexión fue creada
 if(connection <0){

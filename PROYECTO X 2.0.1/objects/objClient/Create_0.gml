@@ -11,4 +11,4 @@ if(global.IS_SERVER){
 var playerName = global._name;
 srcRegisterUser(playerName);
 
-instance_create_layer(95.5,479, "Instances_1",FabiPlayer);
+instance_create_layer(95.5,479, "MonedasyObjetos",FabiPlayer);

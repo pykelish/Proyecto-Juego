@@ -12,4 +12,4 @@ if(global.SERVER <0){
 
 //Damos a esta sesión que es el servidor
 global.IS_SERVER=true;
-room_goto(Room_Test_EMA);
+room_goto(Bosque_Room);

@@ -20,7 +20,7 @@ if(type == network_type_data){
 		//Si lo es, se obtendrán los datos necesarios para crear instancias de jugadores 
 		var playerName = buffer_read(buffer, buffer_string);
 	
-		var npc= instance_create_layer(128,700,"Instances_1", objNPC);
+		var npc= instance_create_layer(87,210,"MonedasyObjetos", objNPC);
 	
 		var serverId= global.PLAYER_SERVER_ID++;
 		

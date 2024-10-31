@@ -15,3 +15,4 @@ if(state="muerto"){
 	room_goto(RoomMuerte);
 }
 */
+

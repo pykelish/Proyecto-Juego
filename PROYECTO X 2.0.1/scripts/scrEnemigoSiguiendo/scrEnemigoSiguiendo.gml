@@ -8,7 +8,7 @@ function scrEnemigoSiguiendo(){
 	
 	if(abs (dx) > 10){
 		hor = sign(dx);
-		image_xscale = hor;
+		image_xscale = hor * -1;
 		scrMovimiento(hor, 2, 8, 8);	
 	}
 	
