@@ -1,0 +1,1 @@
+icono_index = 1;
