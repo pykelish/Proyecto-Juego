@@ -1,34 +1,24 @@
 function MovimientoJugador(){
 	
-	input.movi = keyboard_check(vk_right) - keyboard_check(vk_left);
+	if(input.movi != 0) {
 
-	if (input.movi != 0){
-	
-		if(place_free(x + input.movi * 10, y)) { ///para verificar si a donde queremos caminar es un lugar libre (colisiones)
+		if(!place_meeting(x + input.movi * 10, y, Pared) && enEscalera = false) { ///para verificar si a donde queremos caminar es un lugar libre (colisiones)
 			x += input.movi * 3;
+			image_xscale= sign(input.movi);
+			sprite_index = Pink_Monster_Walk;
 		}
 	
-		if(place_free(x + input.movi * 4, y) && keyboard_check(vk_shift)){
+		if(!place_meeting(x + input.movi * 4, y, Pared) && input.correr && enEscalera = false){
 			x += input.movi * 3;
-		}
-
-		image_xscale = input.movi; /// para escalar la imagen y se voltee para a su respectivo aldo de movimiento
-		sprite_index = Pink_Monster_Walk;
-	
-		if(keyboard_check(vk_shift)){
-			image_xscale =input.movi; /// para escalar la imagen y se voltee para a su respectivo aldo de movimiento
+			image_xscale = sign(input.movi);
 			sprite_index = Pink_Monster_Run;
 		}
+		
+
 	
-	
-		if (keyboard_check(ord("A"))) {
-		sprite_index = Pink_Monster_Throw; 
-	
-	
-		} 
-	
-	} else {
-		sprite_index = Pink_Monster_Idle; 
+	} else{
+
+		sprite_index = Pink_Monster_Idle;	
 	
 	}
 }

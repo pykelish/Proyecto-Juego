@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scrEscalerasMovi",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scrEscalerasMovi",
+  "parent":{
+    "name":"BasicMovements",
+    "path":"folders/Scripts/BasicMovements.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

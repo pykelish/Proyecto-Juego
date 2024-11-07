@@ -9,8 +9,9 @@ input = {
 	contadorSalto:0,
 	escaleraArriba:0,
 	escaleraAbajo:0,
-	gameOver:0
-	
+	gameOver:0,
+	dash:0,
+	disparo:0,
 };
 
 //Creamos una variable lasInput identica a input, para saber que inputs están siendo repetidos...
@@ -26,8 +27,9 @@ lastInput = {
 	contadorSalto:0,
 	escaleraArriba:0,
 	escaleraAbajo:0,
-	gameOver:0
-	
+	gameOver:0,
+	dash:0,
+	disparo:0,
 };
 
 
@@ -38,17 +40,20 @@ Punto = 0;
 vy = 0;
 
 
+estado="idle";
+width = 6;
+height = 25;
+DisparoRatio = 0; 
 /*
 event_inherited();
-DisparoRatio = 0; 
+
 
 state = "vivo";
 
-width = 6;
-height = 25;
 
 
-estado="idle";
+
+
 hp = 2;
 contador = 0; 
 SpriteMuerte = Pink_Monster_Death; 

@@ -1,2 +1,2 @@
-//estado = "idle";
+estado = "idle";
 
