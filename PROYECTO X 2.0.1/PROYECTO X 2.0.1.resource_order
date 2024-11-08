@@ -152,6 +152,7 @@
     {"name":"scrEscalerasMovi","order":8,"path":"scripts/scrEscalerasMovi/scrEscalerasMovi.yy",},
     {"name":"scrMovimiento","order":4,"path":"scripts/scrMovimiento/scrMovimiento.yy",},
     {"name":"scrMovimientoEnemigo","order":5,"path":"scripts/scrMovimientoEnemigo/scrMovimientoEnemigo.yy",},
+    {"name":"scrRecogerObj","order":9,"path":"scripts/scrRecogerObj/scrRecogerObj.yy",},
     {"name":"srcBroadcastUsers","order":1,"path":"scripts/srcBroadcastUsers/srcBroadcastUsers.yy",},
     {"name":"srcBroadcastWorld","order":2,"path":"scripts/srcBroadcastWorld/srcBroadcastWorld.yy",},
     {"name":"srcDeleteOflinePlayers","order":1,"path":"scripts/srcDeleteOflinePlayers/srcDeleteOflinePlayers.yy",},

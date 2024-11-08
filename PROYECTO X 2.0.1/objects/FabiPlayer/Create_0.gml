@@ -12,6 +12,7 @@ input = {
 	gameOver:0,
 	dash:0,
 	disparo:0,
+	recoger:0,
 };
 
 //Creamos una variable lasInput identica a input, para saber que inputs están siendo repetidos...
@@ -30,6 +31,7 @@ lastInput = {
 	gameOver:0,
 	dash:0,
 	disparo:0,
+	recoger:0,
 };
 
 
@@ -39,6 +41,8 @@ enEscalera = false;
 Punto = 0; 
 vy = 0;
 
+carrying = false; // Estado inicial del jugador sin objeto
+held_object = noone; // Referencia al objeto que lleva, inicialmente ninguno
 
 estado="idle";
 width = 6;

@@ -7,8 +7,11 @@ input.escaleraAbajo = keyboard_check(vk_down);
 input.dash =  keyboard_check_pressed(ord("S"));
 input.gameOver = keyboard_check_pressed(ord("Q"));
 input.disparo = keyboard_check_pressed(ord("J"));
+input.recoger = keyboard_check_pressed(ord("E"));
 //Si está en movimiento, se cambia de posición IMPORTANTE USAR INPUT CON LA PROPIEDAD...
 //... DEL MOVIMIENTO
+
+
 if(estado = "muerto"){
 	exit;
 }
@@ -19,6 +22,7 @@ switch (estado){
 		SaltoJugador();
 		DisparoJugador();
 		DashJugador();
+		scrRecogerObj();
 		break;
 		
 	case "dash":
@@ -28,13 +32,10 @@ switch (estado){
 		}
 		
 	break;
+	
+	case "cargando":
+		MovimientoJugador();
+		scrRecogerObj();
+		
+	break;
 }
-
-
-
-
-
-
-
-
-

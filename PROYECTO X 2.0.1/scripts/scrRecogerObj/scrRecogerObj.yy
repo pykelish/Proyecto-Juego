@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scrRecogerObj",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scrRecogerObj",
+  "parent":{
+    "name":"BasicMovements",
+    "path":"folders/Scripts/BasicMovements.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

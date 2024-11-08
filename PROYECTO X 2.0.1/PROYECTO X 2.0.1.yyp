@@ -202,6 +202,7 @@
     {"id":{"name":"scrEscalerasMovi","path":"scripts/scrEscalerasMovi/scrEscalerasMovi.yy",},},
     {"id":{"name":"scrMovimiento","path":"scripts/scrMovimiento/scrMovimiento.yy",},},
     {"id":{"name":"scrMovimientoEnemigo","path":"scripts/scrMovimientoEnemigo/scrMovimientoEnemigo.yy",},},
+    {"id":{"name":"scrRecogerObj","path":"scripts/scrRecogerObj/scrRecogerObj.yy",},},
     {"id":{"name":"srcAcceptUser","path":"scripts/srcAcceptUser/srcAcceptUser.yy",},},
     {"id":{"name":"srcBroadcastUsers","path":"scripts/srcBroadcastUsers/srcBroadcastUsers.yy",},},
     {"id":{"name":"srcBroadcastWorld","path":"scripts/srcBroadcastWorld/srcBroadcastWorld.yy",},},
