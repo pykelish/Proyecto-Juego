@@ -1,1 +1,1 @@
-texto = "Iniciar Sesion";
+texto = "LOG IN";
