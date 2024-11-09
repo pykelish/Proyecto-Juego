@@ -1,7 +1,7 @@
 //Lista que contiene las acciones del jugador
 //Puede editarse para añadir salto, disparo, dash etc...
 self.selectedCharacter = global.npcCharacter;
-characterType = 0;
+characterType = irandom_range(1, 3);
 input = {
 	//Propiedad encargada del movimiento izq-derecha del jugador
 	movi:0,
