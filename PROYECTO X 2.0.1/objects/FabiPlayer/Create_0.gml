@@ -41,6 +41,7 @@ lastInput = {
 
 
 // En el evento Create del objeto controlador
+hp = 3;
 saltoDoble = 0;
 enEscalera = false;
 Punto = 0; 
@@ -56,8 +57,8 @@ DisparoRatio = 0;
 horas = 0;
 minutos = 0;
 segundos = 0;
-
 alarma_segundo = room_speed;
+
 /*
 event_inherited();
 
@@ -68,7 +69,7 @@ state = "vivo";
 
 
 
-hp = 2;
+
 contador = 0; 
 SpriteMuerte = Pink_Monster_Death; 
 Esperar = 0;
