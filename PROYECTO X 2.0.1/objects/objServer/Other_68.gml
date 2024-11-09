@@ -21,7 +21,6 @@ if(type == network_type_data){
 		var playerName = buffer_read(buffer, buffer_string);
 	
 		var npc= instance_create_layer(87,210,"MonedasyObjetos", objNPC);
-	
 		var serverId= global.PLAYER_SERVER_ID++;
 		
 		npc.name = playerName;

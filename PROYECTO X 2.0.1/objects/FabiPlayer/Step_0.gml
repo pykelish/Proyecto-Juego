@@ -18,10 +18,10 @@ if(estado = "muerto"){
 
 switch (estado){
 	case "idle":
-		MovimientoJugador();
-		SaltoJugador();
-		DisparoJugador();
-		DashJugador();
+		MovimientoJugador("player");
+		SaltoJugador("player");
+		DisparoJugador("player");
+		DashJugador("player");
 		scrRecogerObj();
 		break;
 		
@@ -34,7 +34,7 @@ switch (estado){
 	break;
 	
 	case "cargando":
-		MovimientoJugador();
+		MovimientoJugador("player");
 		scrRecogerObj();
 		
 	break;

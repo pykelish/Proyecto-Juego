@@ -1,5 +1,10 @@
 //Lista que contiene las acciones del jugador
 //Puede editarse para añadir salto, disparo, dash etc...
+
+show_message("Valor de global.selectedCharacter en Create: " + string(global.selectedCharacter));
+
+
+
 input = {
 	//Propiedad encargada del movimiento izq-derecha del jugador
 	movi:0,

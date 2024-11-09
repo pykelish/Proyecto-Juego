@@ -1,12 +1,7 @@
 
-//Si el input (acción) cambió
-
-
 /*if(state = "muerto"){
 	exit;
 }*/
-
-
 if (vspeed > 0 && enEscalera = false){
 	var lista = ds_list_create();
 	var colisiones = collision_rectangle_list(x - 8, y, x + 8, y + vspeed, Pared, true, true, lista, true);
@@ -35,27 +30,57 @@ if (vspeed > 0 && enEscalera = false){
 	}
 
 
-} /*else if(vspeed < 0 && enEscalera = false) {
-	var techo = collision_rectangle(x - 8, y - 90, x + 8, y - 90 + vspeed, Pared, false, false);		
-	if (techo) {
-		y = techo.y + techo.sprite_height + 90;
-		vspeed = 0;
-			
-	}
-	
-	
-}*/
+}
 
-if ((!collision_rectangle(x - 8, floor(y), x + 8, ceil(y) + 1, Pared, true, true) || vspeed!= 0) && enEscalera==false ){
+
+
+if ((!collision_rectangle(x - 8, floor(y), x + 8, ceil(y)+1, Pared, true, true) || vspeed!= 0) && enEscalera==false ){
 	gravity = .3; 
-} 
+}
+
 
 if (!place_meeting(x, y + 1, Pared) && enEscalera = false) {
-	sprite_index = Dude_Monster_JumpFall;
-
+	
+		switch(global.npcCharacter){
+						
+				case 1: sprite_index = Pink_Monster_JumpFall;
+				break;
+				case 2: sprite_index = Owlet_Monster_JumpFall;
+				break;
+				case 3: sprite_index = Dude_Monster_JumpFall;
+				break;
+					
+		}
 }
 
 if(place_meeting(x, y + 1, ParePara) && enEscalera = true){
-	sprite_index = Dude_Monster_Climb;
-
+	
+		switch(global.npcCharacter){
+						
+				case 1: sprite_index = Pink_Monster_Climb;
+				break;
+				case 2: sprite_index = Owlet_Monster_Climb;
+				break;
+				case 3: sprite_index = Dude_Monster_Climb;
+				break;
+					
+		}
 }
+
+/*if (keyboard_check(ord("A"))) {
+	sprite_index = Pink_Monster_Throw; 
+	if(Esperar == 4) {
+		Esperar = 0; 	
+	}
+} 
+
+if (hp <= 0) {
+	
+	sprite_index = SpriteMuerte;
+	state = "muerto";
+	
+
+} */
+
+
+

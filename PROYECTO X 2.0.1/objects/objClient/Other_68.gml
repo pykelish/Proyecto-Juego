@@ -18,7 +18,7 @@ if(type == network_type_data){
 		for( var i=0; i<playersAmount; i++) {
 			
 			var playerName = buffer_read(buffer, buffer_string);
-			var serverId = buffer_read (buffer, buffer_s8);
+			var serverId = buffer_read (buffer, buffer_s8);		
 			
 			if(serverId == global.SERVER_ID){
 				
@@ -38,7 +38,7 @@ if(type == network_type_data){
 				
 				"serverId": serverId,
 				"name" : playerName,
-				"instance": npc
+				"instance": npc,
 				
 			}
 		

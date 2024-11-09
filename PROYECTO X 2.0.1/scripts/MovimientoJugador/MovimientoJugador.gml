@@ -1,37 +1,189 @@
-function MovimientoJugador(){
+function MovimientoJugador(tipo){
 	
-	if(input.movi != 0) {
+	if(tipo == "player"){
+		if(input.movi != 0) {
 
-		if(!place_meeting(x + input.movi * 10, y, Pared) && enEscalera = false) { ///para verificar si a donde queremos caminar es un lugar libre (colisiones)
-			x += input.movi * 3;
-			image_xscale= sign(input.movi);
+			if(!place_meeting(x + input.movi * 10, y, Pared) && enEscalera = false) { ///para verificar si a donde queremos caminar es un lugar libre (colisiones)
+				x += input.movi * 3;
+				image_xscale= sign(input.movi);
 			
-			if(estado = "cargando"){
-				sprite_index = Pink_Monster_WalkwItem;
-			} else {
-				sprite_index = Pink_Monster_Walk;
+				if(estado = "cargando"){
+				
+					switch(global.selectedCharacter){
+						
+						case 1: sprite_index = Pink_Monster_WalkwItem;
+						break;
+						case 2: sprite_index = Owlet_Monster_WalkwItem;
+						break;
+						case 3: sprite_index = Dude_Monster_WalkwItem;
+						break;
+					
+					}
+				
+				} else {
+				
+					switch(global.selectedCharacter){
+						
+						case 1: sprite_index = Pink_Monster_Walk;
+						break;
+						case 2: sprite_index = Owlet_Monster_Walk;
+						break;
+						case 3: sprite_index = Dude_Monster_Walk;		
+						break;
+					}
+				}
 			}
-		}
 	
-		if(!place_meeting(x + input.movi * 4, y, Pared) && input.correr && enEscalera = false){
-			x += input.movi * 3;
-			image_xscale = sign(input.movi);
-			if(estado = "cargando"){
-				sprite_index = Pink_Monster_RunwItem;
-			} else {
-				sprite_index = Pink_Monster_Run;
+			if(!place_meeting(x + input.movi * 4, y, Pared) && input.correr && enEscalera = false){
+				x += input.movi * 3;
+				image_xscale = sign(input.movi);
+				if(estado = "cargando"){				
+					switch(global.selectedCharacter){
+						
+						case 1: sprite_index = Pink_Monster_RunwItem;
+						break;
+						case 2: sprite_index = Owlet_Monster_RunwItem;
+						break;
+						case 3: sprite_index = Dude_Monster_RunwItem;
+						break;
+					};
+				} else {				
+					switch(global.selectedCharacter){
+						
+						case 1: sprite_index = Pink_Monster_Run;
+						break;
+						case 2: sprite_index = Owlet_Monster_Run;
+						break;
+						case 3: sprite_index = Dude_Monster_Run;
+						break;
+					
+					}
+				}
 			}
-		}
 		
 
 	
-	} else{
+		} else{
 
-		if(estado = "cargando"){
-				sprite_index = Pink_Monster_IdlewObject;
-			} else {
-				sprite_index = Pink_Monster_Idle;
+			if(estado = "cargando"){			
+					switch(global.selectedCharacter){
+						
+						case 1: sprite_index = Pink_Monster_IdlewObject;
+						break;
+						case 2: sprite_index = Owlet_Monster_IdlewObject;
+						break;
+						case 3: sprite_index = Dude_Monster_IdlewObject;
+						break;
+					
+					}
+				} else {			
+					switch(global.selectedCharacter){
+						
+						case 1: sprite_index = Pink_Monster_Idle;
+						break;
+						case 2: sprite_index = Owlet_Monster_Idle;
+						break;
+						case 3: sprite_index = Dude_Monster_Idle;
+						break;
+					
+					}
+				}
+	
+		}
+		
+	}else{
+		if(input.movi != 0) {
+
+			if(!place_meeting(x + input.movi * 10, y, Pared) && enEscalera = false) { ///para verificar si a donde queremos caminar es un lugar libre (colisiones)
+				x += input.movi * 3;
+				image_xscale= sign(input.movi);
+			
+				if(estado = "cargando"){
+				
+					switch(global.npcCharacter){
+						
+						case 1: sprite_index = Pink_Monster_WalkwItem;
+						break;
+						case 2: sprite_index = Owlet_Monster_WalkwItem;
+						break;
+						case 3: sprite_index = Dude_Monster_WalkwItem;
+						break;
+					
+					}
+				
+				} else {
+				
+					switch(global.npcCharacter){
+						
+						case 1: sprite_index = Pink_Monster_Walk;
+						break;
+						case 2: sprite_index = Owlet_Monster_Walk;
+						break;
+						case 3: sprite_index = Dude_Monster_Walk;		
+						break;
+					}
+				}
 			}
 	
+			if(!place_meeting(x + input.movi * 4, y, Pared) && input.correr && enEscalera = false){
+				x += input.movi * 3;
+				image_xscale = sign(input.movi);
+				if(estado = "cargando"){				
+					switch(global.npcCharacter){
+						
+						case 1: sprite_index = Pink_Monster_RunwItem;
+						break;
+						case 2: sprite_index = Owlet_Monster_RunwItem;
+						break;
+						case 3: sprite_index = Dude_Monster_RunwItem;
+						break;
+					};
+				} else {				
+					switch(global.npcCharacter){
+						
+						case 1: sprite_index = Pink_Monster_Run;
+						break;
+						case 2: sprite_index = Owlet_Monster_Run;
+						break;
+						case 3: sprite_index = Dude_Monster_Run;
+						break;
+					
+					}
+				}
+			}
+		
+
+	
+		} else{
+
+			if(estado = "cargando"){			
+					switch(global.npcCharacter){
+						
+						case 1: sprite_index = Pink_Monster_IdlewObject;
+						break;
+						case 2: sprite_index = Owlet_Monster_IdlewObject;
+						break;
+						case 3: sprite_index = Dude_Monster_IdlewObject;
+						break;
+					
+					}
+				} else {			
+					switch(global.npcCharacter){
+						
+						case 1: sprite_index = Pink_Monster_Idle;
+						break;
+						case 2: sprite_index = Owlet_Monster_Idle;
+						break;
+						case 3: sprite_index = Dude_Monster_Idle;
+						break;
+					
+					}
+				}
+	
+		}
+		
+		
+		
 	}
+	
 }

@@ -51,13 +51,31 @@ if ((!collision_rectangle(x - 8, floor(y), x + 8, ceil(y)+1, Pared, true, true) 
 
 
 if (!place_meeting(x, y + 1, Pared) && enEscalera = false) {
-	sprite_index = Pink_Monster_JumpFall;
-
+	
+		switch(global.selectedCharacter){
+						
+				case 1: sprite_index = Pink_Monster_JumpFall;
+				break;
+				case 2: sprite_index = Owlet_Monster_JumpFall;
+				break;
+				case 3: sprite_index = Dude_Monster_JumpFall;
+				break;
+					
+		}
 }
 
 if(place_meeting(x, y + 1, ParePara) && enEscalera = true){
-	sprite_index = Pink_Monster_Climb;
-
+	
+		switch(global.selectedCharacter){
+						
+				case 1: sprite_index = Pink_Monster_Climb;
+				break;
+				case 2: sprite_index = Owlet_Monster_Climb;
+				break;
+				case 3: sprite_index = Dude_Monster_Climb;
+				break;
+					
+		}
 }
 
 /*if (keyboard_check(ord("A"))) {
