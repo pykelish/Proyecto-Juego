@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scrReloj",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scrReloj",
+  "parent":{
+    "name":"Shit",
+    "path":"folders/Scripts/Shit.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

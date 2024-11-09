@@ -52,7 +52,12 @@ held_object = noone; // Referencia al objeto que lleva, inicialmente ninguno
 estado="idle";
 width = 6;
 height = 25;
-DisparoRatio = 0; 
+DisparoRatio = 0;
+horas = 0;
+minutos = 0;
+segundos = 0;
+
+alarma_segundo = room_speed;
 /*
 event_inherited();
 

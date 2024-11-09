@@ -9,8 +9,8 @@ input.gameOver = keyboard_check_pressed(ord("Q"));
 input.disparo = keyboard_check_pressed(ord("J"));
 input.recoger = keyboard_check_pressed(ord("E"));
 //Si está en movimiento, se cambia de posición IMPORTANTE USAR INPUT CON LA PROPIEDAD...
-//... DEL MOVIMIENTO
-
+//... DEL MOVIMIENTOs
+scrReloj();
 
 if(estado = "muerto"){
 	exit;

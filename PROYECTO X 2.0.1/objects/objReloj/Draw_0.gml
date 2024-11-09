@@ -1,6 +1,3 @@
-//draw_text(105, 70, string("Vida=") + string(hp)); 
-draw_text(30, 30, string("Puntos=") + string(Punto));
-
 var texto_hora = string(horas);
 var texto_minutos = string(minutos);
 var texto_segundos = string(segundos);
