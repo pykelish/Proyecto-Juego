@@ -115,6 +115,7 @@
     {"id":{"name":"BossCaminar","path":"objects/BossCaminar/BossCaminar.yy",},},
     {"id":{"name":"BossMusica","path":"objects/BossMusica/BossMusica.yy",},},
     {"id":{"name":"Bumeran","path":"objects/Bumeran/Bumeran.yy",},},
+    {"id":{"name":"disparo_Enemigo","path":"objects/disparo_Enemigo/disparo_Enemigo.yy",},},
     {"id":{"name":"DragCaminando","path":"objects/DragCaminando/DragCaminando.yy",},},
     {"id":{"name":"DragParado","path":"objects/DragParado/DragParado.yy",},},
     {"id":{"name":"EnemigoArmadillo","path":"objects/EnemigoArmadillo/EnemigoArmadillo.yy",},},

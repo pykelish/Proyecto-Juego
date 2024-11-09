@@ -81,6 +81,7 @@
     {"name":"BossCaminar","order":12,"path":"objects/BossCaminar/BossCaminar.yy",},
     {"name":"BossMusica","order":8,"path":"objects/BossMusica/BossMusica.yy",},
     {"name":"Bumeran","order":2,"path":"objects/Bumeran/Bumeran.yy",},
+    {"name":"disparo_Enemigo","order":3,"path":"objects/disparo_Enemigo/disparo_Enemigo.yy",},
     {"name":"DragParado","order":3,"path":"objects/DragParado/DragParado.yy",},
     {"name":"EnemigoArmadillo","order":5,"path":"objects/EnemigoArmadillo/EnemigoArmadillo.yy",},
     {"name":"EnemigoPapa","order":6,"path":"objects/EnemigoPapa/EnemigoPapa.yy",},

@@ -3,3 +3,4 @@ hp = 8;
 damage = 1;
 numPuntos = 75;
 state = "idle";
+DisparoRatio = 0; 
