@@ -7,7 +7,7 @@ function SaltoJugador(tipo){
 		if (input.salto && saltoDoble != 1){
 			saltoDoble += 1;
 			vspeed -= 7;	
-			switch(global.selectedCharacter){
+			switch(self.selectedCharacter){
 						
 					case 1: sprite_index = Pink_Monster_JumpUp;
 					break;
@@ -23,11 +23,13 @@ function SaltoJugador(tipo){
 			saltoDoble = 0;
 
 		}
+		
 	}else {
+		
 			if (input.salto && saltoDoble != 1){
 			saltoDoble += 1;
 			vspeed -= 7;	
-			switch(global.npcCharacter){
+			switch(characterType){
 						
 					case 1: sprite_index = Pink_Monster_JumpUp;
 					break;

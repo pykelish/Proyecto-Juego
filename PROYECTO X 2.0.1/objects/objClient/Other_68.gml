@@ -31,6 +31,7 @@ if(type == network_type_data){
 				var npc= instance_create_layer(87,210, "MonedasyObjetos",objNPC);
 				npc.name = playerName;
 				npc.serverId = serverId;
+				npc.characterType = irandom_range(1, 3);
 				
 			}
 			
@@ -38,6 +39,7 @@ if(type == network_type_data){
 				
 				"serverId": serverId,
 				"name" : playerName,
+				"characterType": npc.characterType,
 				"instance": npc,
 				
 			}

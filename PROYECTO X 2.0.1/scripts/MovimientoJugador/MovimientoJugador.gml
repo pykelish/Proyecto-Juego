@@ -9,7 +9,7 @@ function MovimientoJugador(tipo){
 			
 				if(estado = "cargando"){
 				
-					switch(global.selectedCharacter){
+					switch(self.selectedCharacter){
 						
 						case 1: sprite_index = Pink_Monster_WalkwItem;
 						break;
@@ -22,7 +22,7 @@ function MovimientoJugador(tipo){
 				
 				} else {
 				
-					switch(global.selectedCharacter){
+					switch(self.selectedCharacter){
 						
 						case 1: sprite_index = Pink_Monster_Walk;
 						break;
@@ -38,7 +38,7 @@ function MovimientoJugador(tipo){
 				x += input.movi * 3;
 				image_xscale = sign(input.movi);
 				if(estado = "cargando"){				
-					switch(global.selectedCharacter){
+					switch(self.selectedCharacter){
 						
 						case 1: sprite_index = Pink_Monster_RunwItem;
 						break;
@@ -48,7 +48,7 @@ function MovimientoJugador(tipo){
 						break;
 					};
 				} else {				
-					switch(global.selectedCharacter){
+					switch(self.selectedCharacter){
 						
 						case 1: sprite_index = Pink_Monster_Run;
 						break;
@@ -66,7 +66,7 @@ function MovimientoJugador(tipo){
 		} else{
 
 			if(estado = "cargando"){			
-					switch(global.selectedCharacter){
+					switch(characterType){
 						
 						case 1: sprite_index = Pink_Monster_IdlewObject;
 						break;
@@ -77,7 +77,7 @@ function MovimientoJugador(tipo){
 					
 					}
 				} else {			
-					switch(global.selectedCharacter){
+					switch(characterType){
 						
 						case 1: sprite_index = Pink_Monster_Idle;
 						break;
@@ -100,7 +100,7 @@ function MovimientoJugador(tipo){
 			
 				if(estado = "cargando"){
 				
-					switch(global.npcCharacter){
+					switch(characterType){
 						
 						case 1: sprite_index = Pink_Monster_WalkwItem;
 						break;
@@ -113,7 +113,7 @@ function MovimientoJugador(tipo){
 				
 				} else {
 				
-					switch(global.npcCharacter){
+					switch(characterType){
 						
 						case 1: sprite_index = Pink_Monster_Walk;
 						break;
@@ -129,7 +129,7 @@ function MovimientoJugador(tipo){
 				x += input.movi * 3;
 				image_xscale = sign(input.movi);
 				if(estado = "cargando"){				
-					switch(global.npcCharacter){
+					switch(characterType){
 						
 						case 1: sprite_index = Pink_Monster_RunwItem;
 						break;
@@ -139,7 +139,7 @@ function MovimientoJugador(tipo){
 						break;
 					};
 				} else {				
-					switch(global.npcCharacter){
+					switch(characterType){
 						
 						case 1: sprite_index = Pink_Monster_Run;
 						break;
@@ -157,7 +157,7 @@ function MovimientoJugador(tipo){
 		} else{
 
 			if(estado = "cargando"){			
-					switch(global.npcCharacter){
+					switch(characterType){
 						
 						case 1: sprite_index = Pink_Monster_IdlewObject;
 						break;
@@ -168,7 +168,7 @@ function MovimientoJugador(tipo){
 					
 					}
 				} else {			
-					switch(global.npcCharacter){
+					switch(characterType){
 						
 						case 1: sprite_index = Pink_Monster_Idle;
 						break;
