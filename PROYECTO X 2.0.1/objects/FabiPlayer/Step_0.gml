@@ -18,10 +18,12 @@ if(estado = "muerto"){
 
 switch (estado){
 	case "idle":
+		scrEscalerasMovi();
 		MovimientoJugador("player");
 		SaltoJugador("player");
 		DisparoJugador("player");
 		DashJugador("player");
+		
 		scrRecogerObj();
 		break;
 		

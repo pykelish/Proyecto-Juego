@@ -121,6 +121,7 @@
     {"id":{"name":"EnemigoArmadillo","path":"objects/EnemigoArmadillo/EnemigoArmadillo.yy",},},
     {"id":{"name":"EnemigoPapa","path":"objects/EnemigoPapa/EnemigoPapa.yy",},},
     {"id":{"name":"EnemigoRoca","path":"objects/EnemigoRoca/EnemigoRoca.yy",},},
+    {"id":{"name":"Escaleras","path":"objects/Escaleras/Escaleras.yy",},},
     {"id":{"name":"FabiPlayer","path":"objects/FabiPlayer/FabiPlayer.yy",},},
     {"id":{"name":"Fin_Juego","path":"objects/Fin_Juego/Fin_Juego.yy",},},
     {"id":{"name":"FlorCaminando","path":"objects/FlorCaminando/FlorCaminando.yy",},},

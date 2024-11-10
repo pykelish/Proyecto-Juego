@@ -3,7 +3,7 @@ function MovimientoJugador(tipo){
 	if(tipo == "player"){
 		if(input.movi != 0) {
 
-			if(!place_meeting(x + input.movi * 10, y, Pared) && enEscalera = false) { ///para verificar si a donde queremos caminar es un lugar libre (colisiones)
+			if(!place_meeting(x + input.movi * 10, y, Pared)) { ///para verificar si a donde queremos caminar es un lugar libre (colisiones)
 				x += input.movi * 3;
 				image_xscale= sign(input.movi);
 			
@@ -34,7 +34,7 @@ function MovimientoJugador(tipo){
 				}
 			}
 	
-			if(!place_meeting(x + input.movi * 4, y, Pared) && input.correr && enEscalera = false){
+			if(!place_meeting(x + input.movi * 4, y, Pared) && input.correr){
 				x += input.movi * 3;
 				image_xscale = sign(input.movi);
 				if(estado = "cargando"){				
@@ -94,7 +94,7 @@ function MovimientoJugador(tipo){
 	}else{
 		if(input.movi != 0) {
 
-			if(!place_meeting(x + input.movi * 10, y, Pared) && enEscalera = false) { ///para verificar si a donde queremos caminar es un lugar libre (colisiones)
+			if(!place_meeting(x + input.movi * 10, y, Pared)) { ///para verificar si a donde queremos caminar es un lugar libre (colisiones)
 				x += input.movi * 3;
 				image_xscale= sign(input.movi);
 			
@@ -125,7 +125,7 @@ function MovimientoJugador(tipo){
 				}
 			}
 	
-			if(!place_meeting(x + input.movi * 4, y, Pared) && input.correr && enEscalera = false){
+			if(!place_meeting(x + input.movi * 4, y, Pared) && input.correr){
 				x += input.movi * 3;
 				image_xscale = sign(input.movi);
 				if(estado = "cargando"){				

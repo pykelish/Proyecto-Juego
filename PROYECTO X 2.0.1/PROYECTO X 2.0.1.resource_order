@@ -86,6 +86,7 @@
     {"name":"EnemigoArmadillo","order":5,"path":"objects/EnemigoArmadillo/EnemigoArmadillo.yy",},
     {"name":"EnemigoPapa","order":6,"path":"objects/EnemigoPapa/EnemigoPapa.yy",},
     {"name":"EnemigoRoca","order":10,"path":"objects/EnemigoRoca/EnemigoRoca.yy",},
+    {"name":"Escaleras","order":12,"path":"objects/Escaleras/Escaleras.yy",},
     {"name":"Fin_Juego","order":40,"path":"objects/Fin_Juego/Fin_Juego.yy",},
     {"name":"FlorCaminando","order":1,"path":"objects/FlorCaminando/FlorCaminando.yy",},
     {"name":"FlorParada","order":4,"path":"objects/FlorParada/FlorParada.yy",},

@@ -64,7 +64,7 @@ if (!place_meeting(x, y + 1, Pared) && enEscalera = false) {
 		}
 }
 
-if(place_meeting(x, y + 1, ParePara) && enEscalera = true){
+if(place_meeting(x, y + 1, Escaleras) && enEscalera = true){
 	
 		switch(global.selectedCharacter){
 						
@@ -78,13 +78,24 @@ if(place_meeting(x, y + 1, ParePara) && enEscalera = true){
 		}
 }
 
-/*if (keyboard_check(ord("A"))) {
-	sprite_index = Pink_Monster_Throw; 
-	if(Esperar == 4) {
-		Esperar = 0; 	
+if (input.disparo) {
+	switch(global.selectedCharacter){
+						
+		case 1: sprite_index = Pink_Monster_Throw;
+		break;
+		case 2: sprite_index = Owlet_Monster_Throw;
+		break;
+		case 3: sprite_index = Dude_Monster_Throw;
+		break;
+					
 	}
+	/*if(Esperar == 4) {
+		Esperar = 0; 	
+	}*/
 } 
 
+
+/*
 if (hp <= 0) {
 	
 	sprite_index = SpriteMuerte;
