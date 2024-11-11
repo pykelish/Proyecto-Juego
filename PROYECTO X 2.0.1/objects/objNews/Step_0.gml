@@ -20,7 +20,7 @@ if (mouse_check_button_pressed(mb_left)) {
         mouse_y > button_register_y && mouse_y < button_register_y + button_register_h) {
         // Acciones de registro aquí (por ejemplo, enviar los datos al servidor)
 		// Definir la URL del servidor Node.js
-		var url = "http://192.168.1.73:8080/register"; // Cambia esto a tu URL
+		var url = "http://192.168.1.170:8080/register"; // Cambia esto a tu URL
 
 		// Crear los datos en formato JSON
 		var data_json = "{\"name\":\"" + input_name + "\", \"password\":\"" + input_password + "\"}";

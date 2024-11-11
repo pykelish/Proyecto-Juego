@@ -662,10 +662,10 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
+    {"roomId":{"name":"MenuMultiplayer","path":"rooms/MenuMultiplayer/MenuMultiplayer.yy",},},
     {"roomId":{"name":"Client_Select_CharacterOF","path":"rooms/Client_Select_CharacterOF/Client_Select_CharacterOF.yy",},},
     {"roomId":{"name":"Client_ControlesOF","path":"rooms/Client_ControlesOF/Client_ControlesOF.yy",},},
     {"roomId":{"name":"Client_SelectorOF","path":"rooms/Client_SelectorOF/Client_SelectorOF.yy",},},
-    {"roomId":{"name":"MenuMultiplayer","path":"rooms/MenuMultiplayer/MenuMultiplayer.yy",},},
     {"roomId":{"name":"RoomSC","path":"rooms/RoomSC/RoomSC.yy",},},
     {"roomId":{"name":"Room4","path":"rooms/Room4/Room4.yy",},},
     {"roomId":{"name":"Client_Menu1OF","path":"rooms/Client_Menu1OF/Client_Menu1OF.yy",},},

@@ -1,8 +1,8 @@
 // Función MovimientoJugador
 function MovimientoJugador(tipo, selectedCharacter) {
 	
-<<<<<<< Updated upstream
 	if(tipo == "player"){
+		
 		if(input.movi != 0) {
 
 			if(!place_meeting(x + input.movi * 10, y, Pared)) { ///para verificar si a donde queremos caminar es un lugar libre (colisiones)
@@ -48,7 +48,7 @@ function MovimientoJugador(tipo, selectedCharacter) {
 						break;
 						case 3: sprite_index = Dude_Monster_RunwItem;
 						break;
-					};
+					}
 				} else {				
 					switch(self.selectedCharacter){
 						
@@ -62,9 +62,9 @@ function MovimientoJugador(tipo, selectedCharacter) {
 					}
 				}
 			}
-=======
+		}
+
     if (tipo == "player") {
->>>>>>> Stashed changes
 		
         // Movimiento horizontal del jugador (solo si no hay una pared en el camino)
         if (input.movi != 0) {
@@ -114,7 +114,7 @@ function MovimientoJugador(tipo, selectedCharacter) {
     }
 }
 
-<<<<<<< Updated upstream
+
 			if(!place_meeting(x + input.movi * 10, y, Pared)) { ///para verificar si a donde queremos caminar es un lugar libre (colisiones)
 				x += input.movi * 3;
 				image_xscale= sign(input.movi);
@@ -175,7 +175,7 @@ function MovimientoJugador(tipo, selectedCharacter) {
 		
 
 	
-		} else{
+		 else{
 
 			if(estado = "cargando"){			
 					switch(characterType){
@@ -203,10 +203,4 @@ function MovimientoJugador(tipo, selectedCharacter) {
 	
 		}
 		
-		
-		
-	}
-	
-}
-=======
->>>>>>> Stashed changes
+}	

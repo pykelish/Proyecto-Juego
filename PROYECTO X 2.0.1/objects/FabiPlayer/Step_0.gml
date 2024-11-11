@@ -18,14 +18,9 @@ if(estado == "muerto"){
 
 switch (estado){
 	case "idle":
-<<<<<<< Updated upstream
 		scrEscalerasMovi();
-		MovimientoJugador("player");
-=======
-	
 		//show_message(selectedCharacter);
 		MovimientoJugador("player",selectedCharacter);
->>>>>>> Stashed changes
 		SaltoJugador("player");
 		DisparoJugador("player");
 		DashJugador("player");
