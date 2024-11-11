@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scrEnemigoAtaqueAbeja",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scrEnemigoAtaqueAbeja",
+  "parent":{
+    "name":"BasicMovements",
+    "path":"folders/Scripts/BasicMovements.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

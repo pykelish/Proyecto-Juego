@@ -1,4 +1,4 @@
-if (place_meeting(x, y, FabiPlayer) && !Recolectar_Carton) {
+/*if (place_meeting(x, y, FabiPlayer) && !Recolectar_Carton) {
     FabiPlayer.Punto += 50;
     Recolectar_Carton = true;
 }
@@ -8,5 +8,5 @@ if (Recolectar_Carton) {
     if (image_index >= image_number - 0.1){ 
         instance_destroy(); 
     }
-}
+}*/
 

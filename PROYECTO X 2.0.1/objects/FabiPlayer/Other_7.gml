@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-/*switch(state){
+/*switch(estado){
 	case "muerto":
 		image_speed = 0;
 		audio_play_sound(SonidoMuerteEnem, 1, false);
@@ -11,7 +11,7 @@
 		break;
 }
 
-if(state="muerto"){
+if(estado="muerto"){
 	room_goto(RoomMuerte);
 }
 */

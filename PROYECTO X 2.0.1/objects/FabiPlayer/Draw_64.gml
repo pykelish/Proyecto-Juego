@@ -16,4 +16,4 @@ if(string_length(texto_segundos) == 1){
 	texto_segundos = "0" + texto_segundos;	
 }
 
-//draw_text(500, 20, texto_hora + ":" + texto_minutos + ":" + texto_segundos);
+draw_text(500, 20, texto_hora + ":" + texto_minutos + ":" + texto_segundos);
