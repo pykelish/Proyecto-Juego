@@ -1,1 +1,0 @@
-texto = "SERVIDOR";
