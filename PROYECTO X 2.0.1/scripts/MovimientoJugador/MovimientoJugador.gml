@@ -50,3 +50,4 @@ function MovimientoJugador(tipo, selectedCharacter) {
         }
     }
 }
+

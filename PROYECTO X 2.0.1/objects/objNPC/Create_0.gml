@@ -74,7 +74,6 @@ dashProgress = 0;
 */
 // objNPC - Create
  // El NPC no necesita `selectedCharacter`, solo `characterType`
- show_message(global.npcCharacter);
 characterType = global.npcCharacter; 
 // Lo asignaremos al recibir datos del servidor en `async_load`
 input = {

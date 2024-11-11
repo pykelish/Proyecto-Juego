@@ -1,40 +1,30 @@
-// Los recursos de Script han cambiado para la v2.3.0 Consulta
-// https://help.yoyogames.com/hc/en-us/articles/360005277377 para más información
-
-// Función que asigna el sprite en función del estado y el personaje seleccionado
 function asignarSprite(estado, selectedCharacter) {
-	
     var spriteBase;
-    // Asignar sprite base según el personaje seleccionado
-    switch(selectedCharacter) {
-        case 1:
-            spriteBase = "Pink_Monster";
-            break;
-        case 2:
-            spriteBase = "Owlet_Monster";
-            break;
-        case 3:
-            spriteBase = "Dude_Monster";
-            break;
-        default:
-            spriteBase = "Default_Monster"; // Valor por defecto
+    
+    // Selección del sprite base según el personaje
+    switch (selectedCharacter) {
+        case 1: spriteBase = "Pink_Monster"; break;
+        case 2: spriteBase = "Owlet_Monster"; break;
+        case 3: spriteBase = "Dude_Monster"; break;
+        default: spriteBase = "Default_Monster";
     }
 
-    // Convertir las cadenas de estado a un identificador de sprite
-    switch(estado) {
-        case "cargando":
-            sprite_index = spriteBase + "_IdlewObject"; // Asegúrate de que el sprite existe
-            break;
-        case "corriendo":
-            sprite_index = spriteBase + "_Run";
-            break;
-        case "caminando":
-            sprite_index = spriteBase + "_Walk";
-            break;
-        case "reposo":
-            sprite_index = spriteBase + "_Idle";
-            break;
-        default:
-            sprite_index = spriteBase + "_Idle"; // Valor por defecto
+    // Construcción del nombre del sprite basado en el estado
+    var spriteName;
+    switch (estado) {
+        case "cargando": spriteName = spriteBase + "_IdlewObject"; break;
+        case "corriendo": spriteName = spriteBase + "_Run"; break;
+        case "caminando": spriteName = spriteBase + "_Walk"; break;
+        case "reposo": spriteName = spriteBase + "_Idle"; break;
+        default: spriteName = spriteBase + "_Idle";
+    }
+
+    // Convertir el nombre en un índice de sprite
+    var spriteIndex = asset_get_index(spriteName);
+    if (spriteIndex != -1) {
+        sprite_index = spriteIndex;
+    } else {
+        show_debug_message("Sprite no encontrado: " + spriteName);
+        sprite_index = asset_get_index("Default_Monster_Idle"); // Asigna un sprite por defecto si no existe
     }
 }
