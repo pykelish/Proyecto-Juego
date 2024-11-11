@@ -243,6 +243,7 @@
     {"id":{"name":"Room_Test","path":"rooms/Room_Test/Room_Test.yy",},},
     {"id":{"name":"Room4","path":"rooms/Room4/Room4.yy",},},
     {"id":{"name":"RoomSC","path":"rooms/RoomSC/RoomSC.yy",},},
+    {"id":{"name":"asignarSprite","path":"scripts/asignarSprite/asignarSprite.yy",},},
     {"id":{"name":"DashJugador","path":"scripts/DashJugador/DashJugador.yy",},},
     {"id":{"name":"didInputChange","path":"scripts/didInputChange/didInputChange.yy",},},
     {"id":{"name":"DisparoJugador","path":"scripts/DisparoJugador/DisparoJugador.yy",},},

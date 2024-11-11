@@ -24,7 +24,7 @@ function DashJugador(tipo){
 			if(input.dash){
 			estado = "dash";
 			alarm[0] = room_speed / 3;
-			switch(global.npcCharacter){
+			switch(characterType){
 						
 						case 1: sprite_index = Pink_Monster_Roll;
 						break;

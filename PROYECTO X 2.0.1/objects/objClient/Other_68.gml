@@ -18,7 +18,8 @@ if(type == network_type_data){
 		for( var i=0; i<playersAmount; i++) {
 			
 			var playerName = buffer_read(buffer, buffer_string);
-			var serverId = buffer_read (buffer, buffer_s8);		
+			var serverId = buffer_read (buffer, buffer_s8);	
+			var spriteId = buffer_read(buffer, buffer_s8);
 			
 			if(serverId == global.SERVER_ID){
 				
@@ -26,12 +27,13 @@ if(type == network_type_data){
 				
 			}
 			var npc = srcDoesPlayerExists(serverId);
+			
 			if(npc == noone){
 				
 				var npc= instance_create_layer(87,210, "MonedasyObjetos",objNPC);
 				npc.name = playerName;
 				npc.serverId = serverId;
-				npc.characterType = irandom_range(1, 3);
+				npc.spriteId = spriteId;
 				
 			}
 			
@@ -39,8 +41,9 @@ if(type == network_type_data){
 				
 				"serverId": serverId,
 				"name" : playerName,
-				"characterType": npc.characterType,
+				"spriteId": 0,
 				"instance": npc,
+				
 				
 			}
 		

@@ -13,6 +13,7 @@ function srcBroadcastUsers(){
 		
 		buffer_write(buffer, buffer_string, player.name);
 		buffer_write(buffer, buffer_s8, player.serverId);
+		buffer_write(buffer, buffer_s8, player.spriteId);
 		
 	}
 	

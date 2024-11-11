@@ -1,6 +1,6 @@
 //Lista que contiene las acciones del jugador
 //Puede editarse para añadir salto, disparo, dash etc...
-self.selectedCharacter = global.selectedCharacter;
+/*self.selectedCharacter = global.selectedCharacter;
 characterType = undefined;
 input = {
 	//Propiedad encargada del movimiento izq-derecha del jugador
@@ -57,7 +57,7 @@ minutos = 0;
 segundos = 0;
 alarma_segundo = room_speed;
 
-/*
+
 event_inherited();
 
 
@@ -78,3 +78,38 @@ up = false;
 
 dashProgress = 0; 
 */
+// objPlayer - Create
+
+selectedCharacter = global.selectedCharacter;
+ // Define el personaje del jugador local
+
+input = {
+	// Propiedades de movimiento
+	movi:0, correr:0, salto:0, dobleSalto:false, contadorSalto:0,
+	escaleraArriba:0, escaleraAbajo:0, gameOver:0, dash:0, disparo:0, recoger:0,
+};
+
+// Duplicado de inputs para detectar cambios
+lastInput = {
+	movi:0, correr:0, salto:0, dobleSalto:false, contadorSalto:0,
+	escaleraArriba:0, escaleraAbajo:0, gameOver:0, dash:0, disparo:0, recoger:0,
+};
+
+// Variables adicionales del jugador
+hp = 3;
+saltoDoble = 0;
+enEscalera = false;
+Punto = 0; 
+vy = 0;
+
+carrying = false; 
+held_object = noone;
+
+estado = "idle";
+width = 6;
+height = 25;
+DisparoRatio = 0;
+horas = 0;
+minutos = 0;
+segundos = 0;
+alarma_segundo = room_speed;

@@ -1,10 +1,11 @@
-if(estado = "muerto"){
+if(estado == "muerto"){
 	exit;
 }
 
 switch (estado){
 	case "idle":
-		MovimientoJugador("npc");
+		
+		MovimientoJugador("npc",characterType);
 		SaltoJugador("npc");
 		DisparoJugador("npc");
 		DashJugador("npc");
@@ -20,7 +21,7 @@ switch (estado){
 	break;
 	
 	case "cargando":
-		MovimientoJugador("npc");
+		MovimientoJugador("npc",characterType);
 		scrRecogerObj();
 		
 	break;

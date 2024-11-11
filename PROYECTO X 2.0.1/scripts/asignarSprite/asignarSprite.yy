@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"asignarSprite",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"asignarSprite",
+  "parent":{
+    "name":"BasicMovements",
+    "path":"folders/Scripts/BasicMovements.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

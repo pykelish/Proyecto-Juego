@@ -3,4 +3,5 @@
 
 global.selectedCharacter = 1;
 global.npcCharacter = 1;
+show_message("Before room change: " + string(global.npcCharacter));
 room_goto(Bosque_Room);

@@ -12,14 +12,20 @@ input.recoger = keyboard_check_pressed(ord("E"));
 //... DEL MOVIMIENTOs
 scrReloj();
 
-if(estado = "muerto"){
+if(estado == "muerto"){
 	exit;
 }
 
 switch (estado){
 	case "idle":
+<<<<<<< Updated upstream
 		scrEscalerasMovi();
 		MovimientoJugador("player");
+=======
+	
+		//show_message(selectedCharacter);
+		MovimientoJugador("player",selectedCharacter);
+>>>>>>> Stashed changes
 		SaltoJugador("player");
 		DisparoJugador("player");
 		DashJugador("player");
@@ -36,7 +42,7 @@ switch (estado){
 	break;
 	
 	case "cargando":
-		MovimientoJugador("player");
+		MovimientoJugador("player",selectedCharacter);
 		scrRecogerObj();
 		
 	break;

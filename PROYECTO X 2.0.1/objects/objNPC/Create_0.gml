@@ -1,5 +1,6 @@
 //Lista que contiene las acciones del jugador
 //Puede editarse para añadir salto, disparo, dash etc...
+/*
 self.selectedCharacter = global.npcCharacter;
 characterType = irandom_range(1, 3);
 input = {
@@ -50,7 +51,7 @@ estado="idle";
 width = 6;
 height = 25;
 DisparoRatio = 0; 
-/*
+
 event_inherited();
 
 
@@ -71,3 +72,33 @@ up = false;
 
 dashProgress = 0; 
 */
+// objNPC - Create
+ // El NPC no necesita `selectedCharacter`, solo `characterType`
+ show_message(global.npcCharacter);
+characterType = global.npcCharacter; 
+// Lo asignaremos al recibir datos del servidor en `async_load`
+input = {
+	// Propiedades de movimiento
+	movi:0, correr:0, salto:0, dobleSalto:false, contadorSalto:0,
+	escaleraArriba:0, escaleraAbajo:0, gameOver:0, dash:0, disparo:0, recoger:0,
+};
+
+// Duplicado de inputs para detectar cambios
+lastInput = {
+	movi:0, correr:0, salto:0, dobleSalto:false, contadorSalto:0,
+	escaleraArriba:0, escaleraAbajo:0, gameOver:0, dash:0, disparo:0, recoger:0,
+};
+
+// Variables adicionales del NPC
+saltoDoble = 0;
+enEscalera = false;
+Punto = 0; 
+vy = 0;
+
+carrying = false; 
+held_object = noone;
+
+estado = "idle";
+width = 6;
+height = 25;
+DisparoRatio = 0;
