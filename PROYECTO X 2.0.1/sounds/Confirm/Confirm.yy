@@ -1,6 +1,6 @@
 {
   "$GMSound":"",
-  "%Name":"MenuCancion",
+  "%Name":"Confirm",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -9,17 +9,17 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":36.22313,
-  "name":"MenuCancion",
+  "duration":0.441179,
+  "name":"Confirm",
   "parent":{
-    "name":"Sounds",
-    "path":"folders/Sounds.yy",
+    "name":"Ultimos sonidos Ecobubbles",
+    "path":"folders/Sounds/Ultimos sonidos Ecobubbles.yy",
   },
   "preload":false,
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"MenuCancion.wav",
+  "soundFile":"Confirm.wav",
   "type":0,
-  "volume":0.45,
+  "volume":1.0,
 }
