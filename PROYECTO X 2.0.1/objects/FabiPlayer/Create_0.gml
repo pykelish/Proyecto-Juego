@@ -46,6 +46,7 @@ vy = 0;
 
 carrying = false; // Estado inicial del jugador sin objeto
 held_object = noone; // Referencia al objeto que lleva, inicialmente ninguno
+recolectables = [obj_Bolsa, obj_Botella, obj_Carton];
 
 estado="idle";
 width = 6;
