@@ -104,12 +104,11 @@ vy = 0;
 
 carrying = false; 
 held_object = noone;
-<<<<<<< Updated upstream
+
 recolectables = [obj_Bolsa, obj_Botella, obj_Carton, obj_Lata, obj_Pilas];
 
-=======
 global.tiempo_jugado="";
->>>>>>> Stashed changes
+
 estado = "idle";
 width = 6;
 height = 25;
