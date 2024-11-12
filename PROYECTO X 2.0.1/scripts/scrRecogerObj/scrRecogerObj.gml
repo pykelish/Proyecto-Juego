@@ -36,21 +36,24 @@ function scrRecogerObj() {
 
                 // Verificar si el objeto de basura coincide con el bote de basura correcto
                 var bote_basura = instance_place(held_object.x, held_object.y, obj_Bote_Plastico);
-                if ((held_object.object_index == obj_Botella || held_object.object_index == obj_Bolsa) && bote_basura != noone) {
+                if ((held_object.object_index == obj_Pilas) && bote_basura != noone) {
                     instance_destroy(held_object);
                     held_object = noone; // Limpiar la referencia después de destruir
+					FabiPlayer.Punto += 200;
                 }
                 
                 bote_basura = instance_place(x, y, obj_Bote_Metal);
-                if (held_object != noone && (held_object.object_index == obj_Lata || held_object.object_index == obj_Pilas) && bote_basura != noone) {
+                if (held_object != noone && (held_object.object_index == obj_Lata || held_object.object_index == obj_Botella || held_object.object_index == obj_Bolsa) && bote_basura != noone) {
                     instance_destroy(held_object);
                     held_object = noone;
+					FabiPlayer.Punto += 200;
                 }
                 
                 bote_basura = instance_place(x, y, obj_Bote_Papel);
                 if (held_object != noone && held_object.object_index == obj_Carton && bote_basura != noone) {
                     instance_destroy(held_object);
                     held_object = noone;
+					FabiPlayer.Punto += 200;
                 }
 
                 // Limpiar variables solo si el objeto no fue destruido
