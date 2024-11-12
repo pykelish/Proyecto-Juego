@@ -6,15 +6,15 @@ if (ds_map_find_value(async_load, "id") == get) {
         var resultMap = json_decode(result);
 		var list = ds_map_find_value(resultMap, "players");
 
-		var xx = 100;
-		var yy = 100;
+		var xx = 392;
+		var yy = 285;
 		
 
 		for (var i=0; i< ds_list_size(list); i++){
 		
-			if (i % 6 == 0 && i > 0) 
+			if (i % 4 == 0 && i > 0) 
 			{
-				xx = 100; // Reiniciar la posición X para la nueva fila
+				xx = 392; // Reiniciar la posición X para la nueva fila
 				yy += 200; // Aumentar la posición Y para la nueva fila
 			}
 			var map = ds_list_find_value(list,i);
@@ -39,7 +39,7 @@ if (ds_map_find_value(async_load, "id") == get) {
 				}
 			}
 			
-			xx+=200;
+			xx+=175;
 			ds_map_destroy(map);
 		
 		}
