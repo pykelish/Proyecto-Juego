@@ -22,7 +22,9 @@ var name_y = y + spriteHeight + 10; // Debajo del sprite (10 píxeles de margen)
 // Coordenadas para el puntaje
 var score_x = name_x; // Alinear horizontalmente con el nombre
 var score_y = name_y + text_size + 5; // Debajo del nombre (5 píxeles de margen)
-
+// Coordenadas para el puntaje
+var time_x = name_x; // Alinear horizontalmente con el nombre
+var time_y = name_y + text_size + 40; 
 // Configurar las propiedades del texto
 draw_set_color(text_color); // Color del texto
 draw_set_font(fnt_texto); // Fuente del texto
@@ -34,3 +36,6 @@ draw_text(name_x, name_y, _name);
 
 // Dibujar el puntaje del jugador
 draw_text(score_x, score_y, _highscore);
+
+draw_text(time_x, time_y, _time_played);
+

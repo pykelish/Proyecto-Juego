@@ -9,6 +9,7 @@ if (place_meeting(x, y, FabiPlayer) && !Final) {
 	var json_map = ds_map_create();
 	ds_map_add(json_map, "id", global._id);
 	ds_map_add(json_map, "highscore", FabiPlayer.Punto);
+	ds_map_add(json_map, "time_played", global.tiempo_jugado);
 
 	// Convertir el mapa en formato JSON
 	var json_data = json_encode(json_map);
@@ -33,7 +34,7 @@ if (place_meeting(x, y, FabiPlayer) && !Final) {
 
 if (Final) {
 	
-	show_message("Puntuación obtenida: " + string(FabiPlayer.Punto));
+	show_message("Puntuación obtenida: " + string(FabiPlayer.Punto) + "Tiempo jugado: " + global.tiempo_jugado);
 	
 }
 

@@ -94,6 +94,7 @@
     {"name":"inst_416DE69","path":"rooms/Bosque_Room/Bosque_Room.yy",},
     {"name":"inst_13B70DC5","path":"rooms/Bosque_Room/Bosque_Room.yy",},
     {"name":"inst_282C9D65","path":"rooms/Bosque_Room/Bosque_Room.yy",},
+    {"name":"inst_21C81233","path":"rooms/Bosque_Room/Bosque_Room.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -144,6 +145,7 @@
         {"$GMRInstance":"v1","%Name":"inst_5395D302","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_5395D302","objectId":{"name":"ParePara","path":"objects/ParePara/ParePara.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":9.4375,"scaleY":1.375,"x":4231.0,"y":1036.0,},
         {"$GMRInstance":"v1","%Name":"inst_451BC132","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_451BC132","objectId":{"name":"ParePara","path":"objects/ParePara/ParePara.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":10.0,"scaleY":1.375,"x":4533.0,"y":1036.0,},
         {"$GMRInstance":"v1","%Name":"inst_282C9D65","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_282C9D65","objectId":{"name":"obj_Abeja_Enemigo","path":"objects/obj_Abeja_Enemigo/obj_Abeja_Enemigo.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1024.0,"y":137.0,},
+        {"$GMRInstance":"v1","%Name":"inst_21C81233","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_21C81233","objectId":{"name":"Fin_Juego","path":"objects/Fin_Juego/Fin_Juego.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":5920.0,"y":896.0,},
       ],"layers":[],"name":"MonedasyObjetos","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"Botes","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[],"layers":[],"name":"Botes","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"Colisiones","depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[

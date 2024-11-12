@@ -1,5 +1,3 @@
-/// @description Inserte aquí la descripción
-// Puede escribir su código en este editor
 if (ds_map_find_value(async_load, "id") == get) {
 	
     if (ds_map_find_value(async_load, "status") == 0) {
@@ -11,21 +9,23 @@ if (ds_map_find_value(async_load, "id") == get) {
 		var xx = 100;
 		var yy = 100;
 		
+
 		for (var i=0; i< ds_list_size(list); i++){
-			
-			if (i % 8 == 0 && i > 0) 
+		
+			if (i % 6 == 0 && i > 0) 
 			{
 				xx = 100; // Reiniciar la posición X para la nueva fila
 				yy += 200; // Aumentar la posición Y para la nueva fila
 			}
-			
 			var map = ds_list_find_value(list,i);
 			
-			with(instance_create_layer(xx,yy,"Instances", objScores)){
+			
+			with(instance_create_layer(xx,yy,"Instances",objScores)){
 			
 				_id = ds_map_find_value(map, "id");
 				_name = ds_map_find_value(map, "name");
 				_highscore = ds_map_find_value(map, "highscore");
+				_time_played = ds_map_find_value(map, "time_played");
 			
 				_selected = i == 0;
 				
@@ -34,16 +34,15 @@ if (ds_map_find_value(async_load, "id") == get) {
 					global._id = ds_map_find_value(map, "id");
 					global._name = ds_map_find_value(map, "name");
 					global._highscore = ds_map_find_value(map, "highscore");
+					global._time_played = ds_map_find_value(map, "time_played");
 				
 				}
 			}
+			
 			xx+=200;
 			ds_map_destroy(map);
 		
 		}
-
-
-
 		ds_list_destroy(list);
 		ds_map_destroy(resultMap);
  

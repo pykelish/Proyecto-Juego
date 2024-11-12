@@ -20,4 +20,4 @@ draw_set_color(text_color);// Color del texto
 draw_set_font(fnt_texto);// Configurar el color del texto
 draw_set_valign(fa_top); // Alinear verticalmente arriba
 draw_set_halign(fa_center); // Alinear horizontalmente al centro
-draw_text(name_x, name_y, _name); // Dibujar el nombre del jugador
+draw_text(name_x, name_y, _name);

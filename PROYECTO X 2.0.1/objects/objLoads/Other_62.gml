@@ -9,6 +9,7 @@ if (ds_map_find_value(async_load, "id") == get) {
 		var xx = 100;
 		var yy = 100;
 		
+
 		for (var i=0; i< ds_list_size(list); i++){
 		
 			if (i % 6 == 0 && i > 0) 
@@ -18,11 +19,13 @@ if (ds_map_find_value(async_load, "id") == get) {
 			}
 			var map = ds_list_find_value(list,i);
 			
+			
 			with(instance_create_layer(xx,yy,"Instances",objSelector)){
 			
 				_id = ds_map_find_value(map, "id");
 				_name = ds_map_find_value(map, "name");
 				_highscore = ds_map_find_value(map, "highscore");
+				_time_played = ds_map_find_value(map, "time_played");
 			
 				_selected = i == 0;
 				
@@ -31,6 +34,7 @@ if (ds_map_find_value(async_load, "id") == get) {
 					global._id = ds_map_find_value(map, "id");
 					global._name = ds_map_find_value(map, "name");
 					global._highscore = ds_map_find_value(map, "highscore");
+					global._time_played = ds_map_find_value(map, "time_played");
 				
 				}
 			}
