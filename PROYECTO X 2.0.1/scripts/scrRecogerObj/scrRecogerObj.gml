@@ -25,7 +25,6 @@ function scrRecogerObj() {
                 carrying = true;
                 held_object = nearest;
                 estado = "cargando"; // Cambiar estado a "cargando"
-                // held_object.visible = false; // Opcional: oculta el objeto mientras está en manos
             }
         } else {
             // Soltar el objeto
@@ -34,7 +33,30 @@ function scrRecogerObj() {
                 held_object.x = x; // Coloca el objeto en la posición del jugador al soltarlo
                 held_object.y = y;
                 held_object.visible = true; // Vuelve a hacerlo visible
-                held_object = noone;
+
+                // Verificar si el objeto de basura coincide con el bote de basura correcto
+                var bote_basura = instance_place(held_object.x, held_object.y, obj_Bote_Plastico);
+                if ((held_object.object_index == obj_Botella || held_object.object_index == obj_Bolsa) && bote_basura != noone) {
+                    instance_destroy(held_object);
+                    held_object = noone; // Limpiar la referencia después de destruir
+                }
+                
+                bote_basura = instance_place(x, y, obj_Bote_Metal);
+                if (held_object != noone && (held_object.object_index == obj_Lata || held_object.object_index == obj_Pilas) && bote_basura != noone) {
+                    instance_destroy(held_object);
+                    held_object = noone;
+                }
+                
+                bote_basura = instance_place(x, y, obj_Bote_Papel);
+                if (held_object != noone && held_object.object_index == obj_Carton && bote_basura != noone) {
+                    instance_destroy(held_object);
+                    held_object = noone;
+                }
+
+                // Limpiar variables solo si el objeto no fue destruido
+                if (held_object != noone) {
+                    held_object = noone;
+                }
                 estado = "idle"; // Cambia el estado a "idle" al soltar el objeto
             }
         }
@@ -46,4 +68,3 @@ function scrRecogerObj() {
         held_object.y = y - (sprite_height / 1.5); // Ajusta la altura del objeto sobre el jugador
     }
 }
-

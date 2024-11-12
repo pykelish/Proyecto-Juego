@@ -24,7 +24,6 @@ switch (estado){
 		SaltoJugador("player");
 		DisparoJugador("player");
 		DashJugador("player");
-		
 		scrRecogerObj();
 		break;
 		

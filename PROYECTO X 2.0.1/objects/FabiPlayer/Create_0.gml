@@ -104,6 +104,7 @@ vy = 0;
 
 carrying = false; 
 held_object = noone;
+recolectables = [obj_Bolsa, obj_Botella, obj_Carton, obj_Lata, obj_Pilas];
 
 estado = "idle";
 width = 6;

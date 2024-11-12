@@ -7,6 +7,10 @@ switch (state) {
 	case "siguiendo":
 		scrEnemigoSiguiendo();
 		break;
+		
+	case "muerto":
+		exit; 
+	break;
 }
 
 

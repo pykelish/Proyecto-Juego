@@ -1,6 +1,6 @@
 {
   "$GMObject":"",
-  "%Name":"Bumeran",
+  "%Name":"disparo_Dude",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"Pared","path":"objects/Pared/Pared.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
@@ -8,9 +8,10 @@
     {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"ParePara","path":"objects/ParePara/ParePara.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"ObjetoEnemigo","path":"objects/ObjetoEnemigo/ObjetoEnemigo.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"FlorCaminando","path":"objects/FlorCaminando/FlorCaminando.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"Bumeran",
+  "name":"disparo_Dude",
   "overriddenProperties":[],
   "parent":{
     "name":"ItemsJugador",
@@ -35,8 +36,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Boomerang",
-    "path":"sprites/Boomerang/Boomerang.yy",
+    "name":"DudeMonster_Bubble",
+    "path":"sprites/DudeMonster_Bubble/DudeMonster_Bubble.yy",
   },
   "spriteMaskId":null,
   "visible":true,

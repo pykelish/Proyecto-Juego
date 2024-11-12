@@ -21,12 +21,12 @@ function scrEnemigoSiguiendo() {
 
         // Si el jugador está cerca, el enemigo deja de moverse y ataca
         if (abs(dx) <= 100) { 
-            scrMovimiento(hor, 2, 8, 8);
+            scrMovimiento(hor, 4, 8, 8);
             scrEnemigoAtaqueAbeja();
         } else {
             // Si está fuera de rango de ataque, continúa moviéndose
             sprite_index = Idle__36x34_;
-			scrMovimiento(hor, 2, 8, 8);
+			scrMovimiento(hor, 4, 8, 8);
         }
     }
     else {
