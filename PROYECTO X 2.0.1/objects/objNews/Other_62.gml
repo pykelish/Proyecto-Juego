@@ -27,9 +27,9 @@ if (async_load[? "id"] == http_id) {
         ds_map_add(headers, "Content-Type", "application/json");
 
         // Configurar la solicitud HTTP con los encabezados actualizados
-        global.register_request = http_request("http://192.168.1.73:8080/register/", "POST", headers, json_data);
+        global.register_request = http_request("http://192.168.1.87:8080/register/", "POST", headers, json_data);
 		show_message("Registro exitoso -- Redireccionando");
-		room_goto(ClientLoad);
+		room_goto(Client_LoadOFI);
         // Liberar la memoria del mapa
         ds_map_destroy(json_map);
 

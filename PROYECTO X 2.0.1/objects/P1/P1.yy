@@ -32,8 +32,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Portraits2_01",
-    "path":"sprites/Portraits2_01/Portraits2_01.yy",
+    "name":"Portraits2_01361",
+    "path":"sprites/Portraits2_01361/Portraits2_01361.yy",
   },
   "spriteMaskId":null,
   "visible":true,
