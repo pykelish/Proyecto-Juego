@@ -1,6 +1,6 @@
 {
   "$GMSprite":"",
-  "%Name":"Owlet_Bubble",
+  "%Name":"DudeMonster_Bubble_1",
   "bboxMode":0,
   "bbox_bottom":31,
   "bbox_left":2,
@@ -12,16 +12,16 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"bd3da982-925c-4229-b9ea-0f6ab7436a8f","name":"bd3da982-925c-4229-b9ea-0f6ab7436a8f","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"a35ccb52-c032-4ca6-a252-9e61a4477cb9","name":"a35ccb52-c032-4ca6-a252-9e61a4477cb9","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
   "height":32,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"4fc4787a-7f0b-4196-a10f-c3c69609f9a4","blendMode":0,"displayName":"default","isLocked":false,"name":"4fc4787a-7f0b-4196-a10f-c3c69609f9a4","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"4f235fda-903b-474b-8ab3-b39c497aea8c","blendMode":0,"displayName":"default","isLocked":false,"name":"4f235fda-903b-474b-8ab3-b39c497aea8c","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
-  "name":"Owlet_Bubble",
+  "name":"DudeMonster_Bubble_1",
   "nineSlice":null,
   "origin":9,
   "parent":{
@@ -33,7 +33,7 @@
   "resourceVersion":"2.0",
   "sequence":{
     "$GMSequence":"",
-    "%Name":"Owlet_Bubble",
+    "%Name":"DudeMonster_Bubble",
     "autoRecord":true,
     "backdropHeight":768,
     "backdropImageOpacity":0.5,
@@ -57,7 +57,7 @@
       "resourceType":"KeyframeStore<MomentsEventKeyframe>",
       "resourceVersion":"2.0",
     },
-    "name":"Owlet_Bubble",
+    "name":"DudeMonster_Bubble",
     "playback":1,
     "playbackSpeed":5.0,
     "playbackSpeedType":0,
@@ -69,8 +69,8 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"bd3da982-925c-4229-b9ea-0f6ab7436a8f","path":"sprites/Owlet_Bubble/Owlet_Bubble.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"3e474b97-0f2b-4b5b-a136-0754ab00f775","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"a35ccb52-c032-4ca6-a252-9e61a4477cb9","path":"sprites/DudeMonster_Bubble_1/DudeMonster_Bubble_1.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"3a098c7c-8d32-47ee-8d0b-c6fd443719b6","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,

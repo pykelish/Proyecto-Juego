@@ -2,12 +2,12 @@
 input.movi = keyboard_check(ord("D")) - keyboard_check(ord("A"));
 input.correr = keyboard_check(vk_shift);
 input.salto = keyboard_check_pressed(vk_space);
-input.escaleraArriba = keyboard_check(vk_up);
-input.escaleraAbajo = keyboard_check(vk_down);
-input.dash =  keyboard_check_pressed(ord("S"));
+input.escaleraArriba = keyboard_check(ord("W"));
+input.escaleraAbajo = keyboard_check(ord("S"));
+input.dash =  keyboard_check_pressed(ord("E"));
 input.gameOver = keyboard_check_pressed(ord("Q"));
 input.disparo = keyboard_check_pressed(ord("J"));
-input.recoger = keyboard_check_pressed(ord("E"));
+input.recoger = keyboard_check_pressed(ord("K"));
 //Si está en movimiento, se cambia de posición IMPORTANTE USAR INPUT CON LA PROPIEDAD...
 //... DEL MOVIMIENTOs
 scrReloj();
