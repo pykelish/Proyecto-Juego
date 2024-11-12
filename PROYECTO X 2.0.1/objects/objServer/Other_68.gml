@@ -14,6 +14,7 @@ if(type == network_type_data){
 var type = ds_map_find_value(async_load, "type");
 
 if (type == network_type_data) {
+	
     var buffer = ds_map_find_value(async_load, "buffer");
     var bufferType = buffer_read(buffer, buffer_string);
     var playerId = ds_map_find_value(async_load, "id");
@@ -23,6 +24,7 @@ if (type == network_type_data) {
         var playerName = buffer_read(buffer, buffer_string);
         
         var npc = instance_create_layer(87, 210, "MonedasyObjetos", objNPC);
+		
         var serverId = global.PLAYER_SERVER_ID++;
 		
         
@@ -32,13 +34,12 @@ if (type == network_type_data) {
             "name": playerName,
             "serverId": serverId,
             "instance": npc,
-			"spriteId" : 0,
         });
         
         srcAcceptUser(playerId, serverId);
         srcBroadcastUsers();
     }
-    else if (bufferType == "client_input") {
+    else  if (bufferType == "client_input") {
         var movi = buffer_read(buffer, buffer_f16);
         var correr = buffer_read(buffer, buffer_f16);
         var salto = buffer_read(buffer, buffer_f16);
@@ -66,8 +67,8 @@ if (type == network_type_data) {
             }
         }
     }
-    buffer_delete(buffer);
-}
+		buffer_delete(buffer);
+	}
 else if (type == network_type_disconnect) {
     var playerId = ds_map_find_value(async_load, "socket");
     

@@ -20,7 +20,7 @@ switch (estado){
 	case "idle":
 		scrEscalerasMovi();
 		//show_message(selectedCharacter);
-		MovimientoJugador("player",selectedCharacter);
+		MovimientoJugador("player",self.selectedCharacter);
 		SaltoJugador("player");
 		DisparoJugador("player");
 		DashJugador("player");
@@ -37,7 +37,7 @@ switch (estado){
 	break;
 	
 	case "cargando":
-		MovimientoJugador("player",selectedCharacter);
+		MovimientoJugador("player",self.selectedCharacter);
 		scrRecogerObj();
 		
 	break;

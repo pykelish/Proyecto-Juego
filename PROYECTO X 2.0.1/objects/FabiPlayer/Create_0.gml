@@ -80,9 +80,9 @@ dashProgress = 0;
 */
 // objPlayer - Create
 
-selectedCharacter = global.selectedCharacter;
+self.selectedCharacter = global.selectedCharacter;
  // Define el personaje del jugador local
-
+show_message("selectedCharacter (jugador): " + string(self.selectedCharacter));
 input = {
 	// Propiedades de movimiento
 	movi:0, correr:0, salto:0, dobleSalto:false, contadorSalto:0,

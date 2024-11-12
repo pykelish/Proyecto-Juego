@@ -41,7 +41,7 @@ if ((!collision_rectangle(x - 8, floor(y), x + 8, ceil(y)+1, Pared, true, true) 
 
 if (!place_meeting(x, y + 1, Pared) && enEscalera = false) {
 	
-		switch(global.npcCharacter){
+		switch(self.characterType){
 						
 				case 1: sprite_index = Pink_Monster_JumpFall;
 				break;
@@ -55,7 +55,7 @@ if (!place_meeting(x, y + 1, Pared) && enEscalera = false) {
 
 if(place_meeting(x, y + 1, ParePara) && enEscalera = true){
 	
-		switch(global.npcCharacter){
+		switch(self.characterType){
 						
 				case 1: sprite_index = Pink_Monster_Climb;
 				break;

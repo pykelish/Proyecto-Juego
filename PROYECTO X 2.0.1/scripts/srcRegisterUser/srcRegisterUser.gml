@@ -9,7 +9,7 @@ function srcRegisterUser(playerName){
 	buffer_write(buffer,buffer_string,"register_user");
 	
 	//Le decimos que el buffer almacenará String (Ya que solo será el nombre)
-	buffer_write(buffer, buffer_string, playerName);
+	buffer_write(buffer, buffer_string, playerName); 
 	
 	//Enviamos el paquete de info usando el cliente, nuestro buffer y el tamaño del mismo
 	network_send_packet(global.CLIENT, buffer, buffer_get_size(buffer));
